@@ -94,3 +94,92 @@ string(10) "EasySwoole"
 [45m[2019-06-15 19:07:18][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
 [41m[2019-06-15 19:07:18][DEBUG][ERROR] : [Argument 1 passed to EasySwoole\EasySwoole\Config::load() must be of the type array, string given, called in /home/wwwroot/easyswooe/App/HttpController/Index.php on line 11 at file:/home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Config.php line:92][0m
 [2019-06-15 19:07:28 $101397.0]	INFO	Server is reloading all workers now
+[2019-06-15 19:08:24 $101397.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 19:08:29][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[43m[2019-06-15 19:08:29][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[2019-06-15 19:09:21 $101397.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 19:09:24][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[43m[2019-06-15 19:09:24][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[43m[2019-06-15 19:09:26][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[43m[2019-06-15 19:09:27][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[43m[2019-06-15 19:09:27][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[43m[2019-06-15 19:09:27][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[2019-06-15 19:10:27 $101397.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 19:10:32][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[43m[2019-06-15 19:10:32][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[43m[2019-06-15 19:10:33][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[2019-06-15 19:11:24 $101397.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 19:11:29][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[43m[2019-06-15 19:11:29][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[43m[2019-06-15 19:11:29][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[43m[2019-06-15 19:11:30][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[43m[2019-06-15 19:11:30][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[43m[2019-06-15 19:11:30][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[43m[2019-06-15 19:11:31][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[43m[2019-06-15 19:11:31][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[43m[2019-06-15 19:11:31][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[2019-06-15 19:13:11 $101397.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 19:13:15][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[43m[2019-06-15 19:13:15][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[43m[2019-06-15 19:13:16][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[43m[2019-06-15 19:13:16][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[2019-06-15 19:15:17 $101397.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 19:15:21][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[43m[2019-06-15 19:15:21][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[43m[2019-06-15 19:15:23][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[43m[2019-06-15 19:15:23][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[43m[2019-06-15 19:15:23][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[2019-06-15 19:17:36 $101397.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 19:17:40][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[43m[2019-06-15 19:17:40][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[43m[2019-06-15 19:17:42][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[43m[2019-06-15 19:17:42][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[2019-06-15 19:18:29 $101397.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 19:18:33][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[43m[2019-06-15 19:18:33][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[43m[2019-06-15 19:18:34][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[43m[2019-06-15 19:18:34][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[43m[2019-06-15 19:18:34][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[43m[2019-06-15 19:18:34][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[2019-06-15 19:20:24 $101397.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 19:20:27][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[43m[2019-06-15 19:20:27][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[2019-06-15 19:21:40 $101397.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 19:21:47][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+string(47) "/home/wwwroot/easyswooe/App/Config/database.php"
+[43m[2019-06-15 19:21:47][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:15][0m
+[2019-06-15 19:23:01 $101397.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 19:23:05][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+string(47) "/home/wwwroot/easyswooe/App/Config/database.php"
+[2019-06-15 19:31:32 $101397.0]	INFO	Server is reloading all workers now
+[2019-06-15 19:34:59 $101397.0]	INFO	Server is reloading all workers now
+[2019-06-15 19:35:51 $101397.0]	INFO	Server is reloading all workers now
+[2019-06-15 19:38:21 $101397.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 19:38:28][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[2019-06-15 19:39:56 $101397.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 19:39:59][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[2019-06-15 19:42:23 $101397.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 19:42:27][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[2019-06-15 19:44:08 $101397.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 19:44:12][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[2019-06-15 19:46:06 $101397.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 19:46:10][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[2019-06-15 19:47:34 $101397.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 19:47:39][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[2019-06-15 19:47:57 #101396.1]	INFO	Server is shutdown now
+[45m[2019-06-15 19:48:07][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[2019-06-15 19:54:34 $102948.0]	INFO	Server is reloading all workers now
+[2019-06-15 19:56:47 #102947.1]	INFO	Server is shutdown now
+[2019-06-15 20:00:14 $103127.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 20:00:18][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[2019-06-15 20:02:35 $103127.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 20:02:39][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[2019-06-15 20:02:50 #103126.1]	INFO	Server is shutdown now
+[45m[2019-06-15 20:02:56][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[2019-06-15 20:04:02 $103232.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 20:04:06][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[45m[2019-06-15 22:15:28][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /home/wwwroot/easyswooe/App/HttpController/Base.php on line 34
+
+Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /home/wwwroot/easyswooe/App/HttpController/Base.php on line 34
+[2019-06-15 22:15:28 $19732.0]	WARNING	swManager_check_exit_status: worker#0[pid=19742] abnormal exit, status=255, signal=0
