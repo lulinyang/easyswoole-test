@@ -23,7 +23,8 @@ class EasySwooleEvent implements Event
         // var_dump(EASYSWOOLE_ROOT.'/App/Config');
         self::loadConf(EASYSWOOLE_ROOT.'/App/Config');
         $dbConf = Config::getInstance()->getConf('database');
-        var_dump($dbConf);
+        $redisConf = Config::getInstance()->getConf('redis');
+        // var_dump($dbConf);
         // $mysqlConfig = new \EasySwoole\Mysqli\Config(\EasySwoole\EasySwoole\Config::getInstance()->getConf('MYSQL'));
         // $poolConfig = \EasySwoole\MysqliPool\Mysql::getInstance()->register('mysql', $mysqlConfig);
         // //根据返回的poolConfig对象进行配置连接池配置项
