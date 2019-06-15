@@ -2,6 +2,8 @@
 
 namespace App\HttpController;
 
+use EasySwoole\Config;
+
 class Index extends Base
 {
     public function index()
