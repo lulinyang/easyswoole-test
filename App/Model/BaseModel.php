@@ -22,13 +22,14 @@ class BaseModel extends Model
                 }
             }
         }
+        $sql = $this->getDb()->withTotalCount()->getLastQuery();
         $list = $this->getDb()
             ->withTotalCount()
             // ->orderBy('created_at', 'DESC')
             ->get($this->tableName, [$pageSize * ($page - 1), $pageSize]);
         $total = $this->getDb()->getTotalCount();
 
-        return ['total' => $total, 'pageNo' => $page, 'list' => $list, 'condition' => $condition, 'db' => $this->getDb()->withTotalCount()];
+        return ['total' => $total, 'pageNo' => $page, 'list' => $list, 'condition' => $condition, 'db' => $$sql];
     }
 
     public function find(MemberBean $userBean): ?MemberBean
