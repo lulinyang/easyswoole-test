@@ -42,3 +42,31 @@ PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to all
 Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /home/wwwroot/easyswooe/App/HttpController/Base.php on line 34
 [2019-06-15 16:16:32 $99967.0]	WARNING	swManager_check_exit_status: worker#0[pid=100015] abnormal exit, status=255, signal=0
 [45m[2019-06-15 16:17:13][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[2019-06-15 17:10:43 $99967.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 17:10:49][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[41m[2019-06-15 17:10:49][DEBUG][ERROR] : [Class 'App\HttpController\Config' not found at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:9][0m
+[2019-06-15 17:12:10 $99967.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 17:12:14][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[41m[2019-06-15 17:12:14][DEBUG][ERROR] : [Class 'EasySwoole\Config' not found at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:11][0m
+[2019-06-15 17:13:20 $99967.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 17:13:26][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+string(10) "EasySwoole"
+[2019-06-15 17:19:01 $99967.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 17:19:11][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[45m[2019-06-15 17:19:11][DEBUG][WARNING] : [Swoole\Http\Response::status() expects parameter 1 to be integer, string given at file:/home/wwwroot/easyswooe/vendor/easyswoole/http/src/Response.php line:43][0m
+[2019-06-15 17:22:04 $99967.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 17:22:08][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[45m[2019-06-15 17:22:08][DEBUG][WARNING] : [Illegal offset type in isset or empty at file:/home/wwwroot/easyswooe/vendor/easyswoole/http/src/Message/Status.php line:124][0m
+[45m[2019-06-15 17:22:08][DEBUG][WARNING] : [Swoole\Http\Response::status() expects parameter 1 to be integer, array given at file:/home/wwwroot/easyswooe/vendor/easyswoole/http/src/Response.php line:43][0m
+[45m[2019-06-15 17:23:47][DEBUG][WARNING] : [Illegal offset type in isset or empty at file:/home/wwwroot/easyswooe/vendor/easyswoole/http/src/Message/Status.php line:124][0m
+[45m[2019-06-15 17:23:47][DEBUG][WARNING] : [Swoole\Http\Response::status() expects parameter 1 to be integer, array given at file:/home/wwwroot/easyswooe/vendor/easyswoole/http/src/Response.php line:43][0m
+[45m[2019-06-15 17:23:47][DEBUG][WARNING] : [Illegal offset type in isset or empty at file:/home/wwwroot/easyswooe/vendor/easyswoole/http/src/Message/Status.php line:124][0m
+[45m[2019-06-15 17:23:47][DEBUG][WARNING] : [Swoole\Http\Response::status() expects parameter 1 to be integer, array given at file:/home/wwwroot/easyswooe/vendor/easyswoole/http/src/Response.php line:43][0m
+[45m[2019-06-15 17:23:48][DEBUG][WARNING] : [Illegal offset type in isset or empty at file:/home/wwwroot/easyswooe/vendor/easyswoole/http/src/Message/Status.php line:124][0m
+[45m[2019-06-15 17:23:48][DEBUG][WARNING] : [Swoole\Http\Response::status() expects parameter 1 to be integer, array given at file:/home/wwwroot/easyswooe/vendor/easyswoole/http/src/Response.php line:43][0m
+[45m[2019-06-15 17:23:48][DEBUG][WARNING] : [Illegal offset type in isset or empty at file:/home/wwwroot/easyswooe/vendor/easyswoole/http/src/Message/Status.php line:124][0m
+[45m[2019-06-15 17:23:48][DEBUG][WARNING] : [Swoole\Http\Response::status() expects parameter 1 to be integer, array given at file:/home/wwwroot/easyswooe/vendor/easyswoole/http/src/Response.php line:43][0m
+[45m[2019-06-15 17:23:48][DEBUG][WARNING] : [Illegal offset type in isset or empty at file:/home/wwwroot/easyswooe/vendor/easyswoole/http/src/Message/Status.php line:124][0m
+[45m[2019-06-15 17:23:48][DEBUG][WARNING] : [Swoole\Http\Response::status() expects parameter 1 to be integer, array given at file:/home/wwwroot/easyswooe/vendor/easyswoole/http/src/Response.php line:43][0m
+[2019-06-15 17:23:58 $99967.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 17:24:01][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
