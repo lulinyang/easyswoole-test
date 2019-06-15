@@ -22,8 +22,8 @@ class EasySwooleEvent implements Event
         date_default_timezone_set('Asia/Shanghai');
         // var_dump(EASYSWOOLE_ROOT.'/App/Config');
         self::loadConf(EASYSWOOLE_ROOT.'/App/Config');
-        $dbConf = \EasySwoole\EasySwoole\Config::getInstance()->getConf('database');
-        var_dump($dbConf);
+        $dbConf = Config::getInstance()->getConf('database');
+        // var_dump($dbConf);
         // $mysqlConfig = new \EasySwoole\Mysqli\Config(\EasySwoole\EasySwoole\Config::getInstance()->getConf('MYSQL'));
         // $poolConfig = \EasySwoole\MysqliPool\Mysql::getInstance()->register('mysql', $mysqlConfig);
         // //根据返回的poolConfig对象进行配置连接池配置项
@@ -32,7 +32,7 @@ class EasySwooleEvent implements Event
 
     public static function loadConf($ConfPath)
     {
-        $Conf = \EasySwoole\EasySwoole\Config::getInstance();
+        $Conf = Config::getInstance();
         $files = File::scanDirectory($ConfPath);
         if (!is_array($files)) {
             return;
