@@ -10,7 +10,7 @@ class Base extends Controller
 {
     public function index()
     {
-        $this->actionNotFound('error');
+        // $this->actionNotFound('error');
     }
 
     /**
@@ -26,5 +26,10 @@ class Base extends Controller
         $render->getConfig()->setRender($engine);
         $content = $engine->render($template, $vars);
         $this->response()->write($content);
+    }
+
+    public function actionNotFound()
+    {
+        $this->response()->write('404');
     }
 }
