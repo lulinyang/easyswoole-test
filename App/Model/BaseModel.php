@@ -15,7 +15,7 @@ use App\Utility\Pool\MysqlObject;
  * 通过传入mysql连接去进行处理
  * Class BaseModel.
  */
-class Model
+class BaseModel
 {
     private $db;
 
