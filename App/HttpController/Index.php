@@ -11,8 +11,9 @@ class Index extends Base
     {
         $Conf = Config::getInstance()->getConf('DATABASE');
         $db = Mysql::defer('mysql');
+        $data = $db->get('test');
         // $this->response()->write('Hello World');
-        $this->writeJson(200, $db, 'success');
+        $this->writeJson(200, $data, 'success');
     }
 
     public function test()
