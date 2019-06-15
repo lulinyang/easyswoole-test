@@ -27,10 +27,10 @@ class BaseModel extends Model
             // ->withTotalCount()
             // ->orderBy('created_at', 'DESC')
             ->get($this->tableName, [$pageSize * ($page - 1), $pageSize]);
-        $sql = $this->getDb()->getLastQuery();
+        // $sql = $this->getDb()->getLastQuery();
         $total = $this->getDb()->getTotalCount();
 
-        return ['total' => $total, 'pageNo' => $page, 'list' => $list, 'db' => $sql];
+        return ['total' => $total, 'pageNo' => $page, 'list' => $list];
     }
 
     public function find(MemberBean $userBean): ?MemberBean
