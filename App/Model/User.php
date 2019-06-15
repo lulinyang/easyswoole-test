@@ -23,7 +23,7 @@ class User extends BaseModel
         }
         $list = $this->getDb()
             ->withTotalCount()
-            ->orderBy('member_id', 'DESC')
+            ->orderBy('created_at', 'DESC')
             ->get($this->tableName, [$pageSize * ($page - 1), $pageSize]);
         $total = $this->getDb()->getTotalCount();
 
