@@ -33,7 +33,7 @@ class BaseModel extends Model
         return ['total' => $total, 'pageNo' => $page, 'list' => $list];
     }
 
-    public function find(MemberBean $userBean): ?MemberBean
+    public function find($condition = [])
     {
         $allow = ['where', 'orWhere', 'join'];
         foreach ($condition as $k => $v) {
@@ -43,8 +43,10 @@ class BaseModel extends Model
                 }
             }
         }
+        $data = $this->getDb()->getOne($this->tableName);
+        $sql = $this->getDb()->getLastQuery();
 
-        return  $this->getDb()->getOne($this->tableName);
+        return  ['data' => $data, 'sql' => $sql];
     }
 
     public function update(MemberBean $memberBean, array $data)
