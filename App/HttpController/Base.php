@@ -19,7 +19,7 @@ class Base extends Controller
      * @param $template
      * @param $vars
      */
-    public function render($template, array $vars = [])
+    private function render($template, array $vars = [])
     {
         $engine = new PlatesRender(EASYSWOOLE_ROOT.'/App/Views');
         $render = Render::getInstance();
@@ -30,6 +30,7 @@ class Base extends Controller
 
     public function actionNotFound()
     {
-        $this->response()->write('404');
+        // $this->response()->write('404');
+        $this->render('error');
     }
 }
