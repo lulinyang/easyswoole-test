@@ -20,7 +20,7 @@ class Index extends Base
                 $conditionBean = new ConditionBean();
                 $conditionBean->addWhere('name', '', '<>');
                 // $conditionBean->setPagination($pageNo, $limit);
-                $conditionBean->addOrderBy('created_at', 'DESC');
+
                 $this->writeJson(200, $conditionBean->toArray([], SplBean::FILTER_NOT_NULL), 'success');
 
                 return $user->paginate($conditionBean->toArray([], SplBean::FILTER_NOT_NULL));
