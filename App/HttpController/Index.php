@@ -16,8 +16,8 @@ class Index extends Base
         $this->response()->write('去你大爷的');
     }
 
-    public function actionNotFound()
-    {
-        $this->response()->write('404');
-    }
+    // public function actionNotFound()
+    // {
+    //     $this->response()->write('404');
+    // }
 }
