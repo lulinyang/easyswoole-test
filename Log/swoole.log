@@ -1,0 +1,44 @@
+[2019-06-15 14:50:46 #98774.1]	INFO	Server is shutdown now
+[2019-06-15 14:53:41 #98992.1]	INFO	Server is shutdown now
+[2019-06-15 14:56:09 #99087.1]	INFO	Server is shutdown now
+[2019-06-15 15:33:33 $99135.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 15:33:43][DEBUG][WARNING] : [Declaration of App\HttpController\Index::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:7][0m
+[2019-06-15 15:42:18 $99135.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 15:42:23][DEBUG][WARNING] : [Declaration of App\HttpController\Index::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:7][0m
+[2019-06-15 15:42:58 #99134.1]	INFO	Server is shutdown now
+[2019-06-15 15:44:29 #99381.1]	INFO	Server is shutdown now
+[2019-06-15 15:47:27 $99440.0]	INFO	Server is reloading all workers now
+[2019-06-15 15:51:35 $99440.0]	INFO	Server is reloading all workers now
+[2019-06-15 15:52:08 #99439.1]	INFO	Server is shutdown now
+[2019-06-15 15:56:26 #99595.1]	INFO	Server is shutdown now
+[2019-06-15 16:03:51 $99655.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 16:03:57][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[2019-06-15 16:06:10 $99655.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 16:06:12][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[41m[2019-06-15 16:06:12][DEBUG][ERROR] : [Class 'App\Tools\PlatesRender' not found at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:24][0m
+[2019-06-15 16:10:20 $99655.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 16:10:29][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+PHP Fatal error:  Interface 'EasySwoole\Template\RenderInterface' not found in /home/wwwroot/easyswooe/App/Tools/PlatesRender.php on line 12
+
+Fatal error: Interface 'EasySwoole\Template\RenderInterface' not found in /home/wwwroot/easyswooe/App/Tools/PlatesRender.php on line 12
+[2019-06-15 16:10:29 $99655.0]	WARNING	swManager_check_exit_status: worker#0[pid=99861] abnormal exit, status=255, signal=0
+[2019-06-15 16:11:16 #99654.1]	INFO	Server is shutdown now
+[45m[2019-06-15 16:11:34][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+PHP Fatal error:  Interface 'EasySwoole\Template\RenderInterface' not found in /home/wwwroot/easyswooe/App/Tools/PlatesRender.php on line 12
+
+Fatal error: Interface 'EasySwoole\Template\RenderInterface' not found in /home/wwwroot/easyswooe/App/Tools/PlatesRender.php on line 12
+[2019-06-15 16:11:34 $99882.0]	WARNING	swManager_check_exit_status: worker#0[pid=99892] abnormal exit, status=255, signal=0
+[45m[2019-06-15 16:12:20][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[2019-06-15 16:14:03 #99881.1]	INFO	Server is shutdown now
+[45m[2019-06-15 16:14:11][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /home/wwwroot/easyswooe/App/HttpController/Base.php on line 34
+
+Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /home/wwwroot/easyswooe/App/HttpController/Base.php on line 34
+[2019-06-15 16:14:14 $99967.0]	WARNING	swManager_check_exit_status: worker#0[pid=99977] abnormal exit, status=255, signal=0
+[2019-06-15 16:16:10 $99967.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 16:16:29][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /home/wwwroot/easyswooe/App/HttpController/Base.php on line 34
+
+Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /home/wwwroot/easyswooe/App/HttpController/Base.php on line 34
+[2019-06-15 16:16:32 $99967.0]	WARNING	swManager_check_exit_status: worker#0[pid=100015] abnormal exit, status=255, signal=0
+[45m[2019-06-15 16:17:13][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m

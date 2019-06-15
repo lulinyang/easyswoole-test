@@ -6,6 +6,8 @@
         }
     },
     "require": {
-        "easyswoole/easyswoole": "3.x"
+        "easyswoole/easyswoole": "3.x",
+        "easyswoole/template": "^1.0",
+        "illuminate/database": "^5.8"
     }
 }
