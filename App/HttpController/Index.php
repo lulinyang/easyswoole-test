@@ -10,9 +10,10 @@ class Index extends Base
     {
         // $conf = Config::getInstance()->load('database.php');
         var_dump(EASYSWOOLE_ROOT.'/App/Config/database.php');
+        $str = EASYSWOOLE_ROOT.'/App/Config/database.php';
         $Conf = Config::getInstance()->loadFile(EASYSWOOLE_ROOT.'/App/Config/database.php');
         // $this->response()->write('Hello World');
-        $this->writeJson(200, $conf, 'success');
+        $this->writeJson(200, $str, 'success');
     }
 
     public function test()
