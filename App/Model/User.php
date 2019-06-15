@@ -2,6 +2,8 @@
 
 namespace App\Model;
 
+use App\Model;
+
 class User extends Model
 {
     protected $tableName = 'users';

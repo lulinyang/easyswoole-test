@@ -19,7 +19,6 @@ class Index extends Base
             //new 一个条件类,方便传入条件
             $conditionBean = new ConditionBean();
             $conditionBean->addWhere('name', '', '<>');
-            $this->writeJson(200, $conditionBean->toArray([], SplBean::FILTER_NOT_NULL), 'success');
 
             return $user->getAll($conditionBean->toArray([], SplBean::FILTER_NOT_NULL));
         });
