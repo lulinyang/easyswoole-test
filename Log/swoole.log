@@ -70,3 +70,27 @@ string(10) "EasySwoole"
 [45m[2019-06-15 17:23:48][DEBUG][WARNING] : [Swoole\Http\Response::status() expects parameter 1 to be integer, array given at file:/home/wwwroot/easyswooe/vendor/easyswoole/http/src/Response.php line:43][0m
 [2019-06-15 17:23:58 $99967.0]	INFO	Server is reloading all workers now
 [45m[2019-06-15 17:24:01][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[2019-06-15 18:41:46 $99967.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 18:41:56][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[43m[2019-06-15 18:41:56][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[2019-06-15 18:42:36 $99967.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 18:42:39][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[43m[2019-06-15 18:42:39][DEBUG][NOTICE] : [Undefined variable: conf at file:/home/wwwroot/easyswooe/App/HttpController/Index.php line:14][0m
+[2019-06-15 18:44:27 $99967.0]	INFO	Server is reloading all workers now
+[2019-06-15 18:46:37 $99967.0]	INFO	Server is reloading all workers now
+[2019-06-15 18:46:46 $99967.0]	INFO	Server is reloading all workers now
+[2019-06-15 18:47:21 $99967.0]	INFO	Server is reloading all workers now
+[2019-06-15 18:48:25 $99967.0]	INFO	Server is reloading all workers now
+[2019-06-15 18:51:38 $99967.0]	INFO	Server is reloading all workers now
+[2019-06-15 18:52:53 $99967.0]	INFO	Server is reloading all workers now
+[2019-06-15 18:55:51 #99966.1]	INFO	Server is shutdown now
+[2019-06-15 18:56:23 $101397.0]	INFO	Server is reloading all workers now
+[2019-06-15 18:57:23 $101397.0]	INFO	Server is reloading all workers now
+[2019-06-15 19:00:12 $101397.0]	INFO	Server is reloading all workers now
+[2019-06-15 19:05:11 $101397.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 19:05:35][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[41m[2019-06-15 19:05:35][DEBUG][ERROR] : [Argument 1 passed to EasySwoole\EasySwoole\Config::load() must be of the type array, string given, called in /home/wwwroot/easyswooe/App/HttpController/Index.php on line 11 at file:/home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Config.php line:92][0m
+[2019-06-15 19:07:09 $101397.0]	INFO	Server is reloading all workers now
+[45m[2019-06-15 19:07:18][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[41m[2019-06-15 19:07:18][DEBUG][ERROR] : [Argument 1 passed to EasySwoole\EasySwoole\Config::load() must be of the type array, string given, called in /home/wwwroot/easyswooe/App/HttpController/Index.php on line 11 at file:/home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Config.php line:92][0m
+[2019-06-15 19:07:28 $101397.0]	INFO	Server is reloading all workers now
