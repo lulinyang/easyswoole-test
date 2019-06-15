@@ -9,7 +9,7 @@ class Index extends Base
     public function index()
     {
         // $conf = Config::getInstance()->load('database.php');
-        $Conf = Config::getInstance()->getConf('MYSQL');
+        $Conf = Config::getInstance()->getConf('database');
         // $this->response()->write('Hello World');
         $this->writeJson(200, $conf, 'success');
     }
