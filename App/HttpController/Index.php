@@ -8,8 +8,8 @@ class Index extends Base
 {
     public function index()
     {
-        $conf = Config::getInstance()->load('database.php');
-        // $Conf = Config::getInstance()->getConf('database.php');
+        // $conf = Config::getInstance()->load('database.php');
+        $Conf = Config::getInstance()->getConf('database.php');
         // $this->response()->write('Hello World');
         $this->writeJson(200, $conf, 'success');
     }

@@ -32,12 +32,10 @@ class EasySwooleEvent implements Event
     {
         $Conf = \EasySwoole\EasySwoole\Config::getInstance();
         $files = File::scanDirectory($ConfPath);
-        var_dump($files);
         if (!is_array($files)) {
             return;
         }
         foreach ($files['files'] as $file) {
-            var_dump('=====', $file);
             $data = require_once $file;
             $Conf->setConf(strtolower(basename($file, '.php')), (array) $data);
         }
