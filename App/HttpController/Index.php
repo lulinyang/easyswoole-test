@@ -12,17 +12,17 @@ class Index extends Base
 {
     public function index()
     {
-        $this->writeJson(200, 'aaa', 'success');
+        // $this->writeJson(200, 'aaa', 'success');
         // try {
-        //     $data = MysqlPool::invoke(function (MysqlObject $db) {
-        //         $user = new User($db);
-        //         //new 一个条件类,方便传入条件
-        //         $conditionBean = new ConditionBean();
-        //         $conditionBean->addWhere('name', '', '<>');
+        $data = MysqlPool::invoke(function (MysqlObject $db) {
+            $user = new User($db);
+            //new 一个条件类,方便传入条件
+            $conditionBean = new ConditionBean();
+            $conditionBean->addWhere('name', '', '<>');
 
-        //         return $user->getAll($conditionBean->toArray([], SplBean::FILTER_NOT_NULL));
-        //     });
-        //     $this->writeJson(200, $data, 'success');
+            return $user->getAll($conditionBean->toArray([], SplBean::FILTER_NOT_NULL));
+        });
+        $this->writeJson(200, $data, 'success');
         // } catch (\Throwable $throwable) {
         //     $this->writeJson(Status::CODE_BAD_REQUEST, null, $throwable->getMessage());
         // } catch (PoolEmpty $poolEmpty) {
