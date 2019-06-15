@@ -20,7 +20,7 @@ class Index extends Base
         // // $this->response()->write('Hello World');
         // $this->writeJson(200, $data, 'success');
         $data = MysqlPool::invoke(function (MysqlObject $db) {
-            $user = new User($db);
+            return $user = new User($db);
             //new 一个条件类,方便传入条件
             $conditionBean = new ConditionBean();
             $conditionBean->addWhere('name', '', '<>');
