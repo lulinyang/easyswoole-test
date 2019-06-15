@@ -13,6 +13,7 @@ use EasySwoole\EasySwoole\AbstractInterface\Event;
 use EasySwoole\Http\Request;
 use EasySwoole\Http\Response;
 use EasySwoole\Utility\File;
+use EasySwoole\MysqliPool\Mysql;
 
 class EasySwooleEvent implements Event
 {
@@ -23,12 +24,11 @@ class EasySwooleEvent implements Event
         // var_dump(EASYSWOOLE_ROOT.'/App/Config');
         self::loadConf(EASYSWOOLE_ROOT.'/App/Config');
         $dbConf = Config::getInstance()->getConf('database');
-        // $redisConf = Config::getInstance()->getConf('redis');
-        // var_dump($redisConf);
-        // $mysqlConfig = new \EasySwoole\Mysqli\Config(\EasySwoole\EasySwoole\Config::getInstance()->getConf('MYSQL'));
-        // $poolConfig = \EasySwoole\MysqliPool\Mysql::getInstance()->register('mysql', $mysqlConfig);
+        $mysqlConfig = new \EasySwoole\Mysqli\Config($dbConf['MYSQL']);
+        $poolConfig = Mysql::getInstance()->register('mysql', $mysqlConfig);
         // //根据返回的poolConfig对象进行配置连接池配置项
-        // $poolConfig->setMaxObjectNum(\EasySwoole\EasySwoole\Config::getInstance()->getConf('MYSQL.maxObjectNum'));
+        var_dump($dbConf['MYSQL']['maxObjectNum']);
+        $poolConfig->setMaxObjectNum($dbConf['MYSQL']['maxObjectNum']);
     }
 
     public static function loadConf($ConfPath)
