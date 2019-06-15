@@ -6,7 +6,7 @@
  * Time: 12:31 PM.
  */
 
-namespace App;
+namespace App\Model;
 
 use App\Utility\Pool\MysqlObject;
 

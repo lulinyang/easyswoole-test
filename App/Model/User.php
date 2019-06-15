@@ -2,9 +2,7 @@
 
 namespace App\Model;
 
-use App\Model;
-
-class User extends Model
+class User extends BaseModel
 {
     protected $tableName = 'users';
     protected $name;
