@@ -3,17 +3,16 @@
 namespace App\HttpController;
 
 use EasySwoole\EasySwoole\Config;
+use EasySwoole\MysqliPool\Mysql;
 
 class Index extends Base
 {
     public function index()
     {
-        // $conf = Config::getInstance()->load('database.php');
-        // var_dump(EASYSWOOLE_ROOT.'/App/Config/database.php');
-        // $str = EASYSWOOLE_ROOT.'/App/Config/database.php';
         $Conf = Config::getInstance()->getConf('DATABASE');
+        $db = Mysql::defer('mysql');
         // $this->response()->write('Hello World');
-        $this->writeJson(200, $Conf, 'success');
+        $this->writeJson(200, $db, 'success');
     }
 
     public function test()
