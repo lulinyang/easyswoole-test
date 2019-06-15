@@ -10,7 +10,7 @@ class Index extends Base
     {
         $conf = Config::getInstance()->getConf('MAIN_SERVER');
         // $this->response()->write('Hello World');
-        $this->writeJson($conf);
+        $this->writeJson(200, $conf);
     }
 
     public function test()
