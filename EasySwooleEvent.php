@@ -21,13 +21,10 @@ class EasySwooleEvent implements Event
     {
         // TODO: Implement initialize() method.
         date_default_timezone_set('Asia/Shanghai');
-        // var_dump(EASYSWOOLE_ROOT.'/App/Config');
         self::loadConf(EASYSWOOLE_ROOT.'/App/Config');
         // $dbConf = Config::getInstance()->getConf('DATABASE');
         // $mysqlConfig = new \EasySwoole\Mysqli\Config($dbConf['MYSQL']);
         // $poolConfig = Mysql::getInstance()->register('mysql', $mysqlConfig);
-        // //根据返回的poolConfig对象进行配置连接池配置项
-        // var_dump($dbConf['MYSQL']['maxObjectNum']);
         // $poolConfig->setMaxObjectNum($dbConf['MYSQL']['maxObjectNum']);
     }
 
