@@ -22,9 +22,9 @@ class BaseModel extends Model
                 }
             }
         }
-        $sql = $this->getDb()->withTotalCount()->getLastQuery();
+        $sql = $this->getDb()->getLastQuery();
         $list = $this->getDb()
-            ->withTotalCount()
+            // ->withTotalCount()
             // ->orderBy('created_at', 'DESC')
             ->get($this->tableName, [$pageSize * ($page - 1), $pageSize]);
         $total = $this->getDb()->getTotalCount();
