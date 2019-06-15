@@ -19,6 +19,7 @@ class Index extends Base
                 //new 一个条件类,方便传入条件
                 $conditionBean = new ConditionBean();
                 $conditionBean->addWhere('name', '', '<>');
+                $conditionBean->addOrderBy('created_at', 'DESC');
 
                 return $user->getAll($conditionBean->toArray([], SplBean::FILTER_NOT_NULL));
             });

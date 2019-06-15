@@ -46,7 +46,7 @@ class BaseModel
         }
         $list = $this->getDb()
             ->withTotalCount()
-            ->orderBy('created_at', 'DESC')
+            // ->orderBy('created_at', 'DESC')
             ->get($this->tableName, [$pageSize * ($page - 1), $pageSize]);
         $total = $this->getDb()->getTotalCount();
 
