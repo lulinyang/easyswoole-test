@@ -31,6 +31,6 @@ class Base extends Controller
     public function actionNotFound()
     {
         // $this->response()->write('404');
-        $this->render('error');
+        $this->actionNotFound('error');
     }
 }
