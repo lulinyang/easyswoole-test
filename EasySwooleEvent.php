@@ -31,7 +31,7 @@ class EasySwooleEvent implements Event
     public static function loadConf($ConfPath)
     {
         $Conf = \EasySwoole\EasySwoole\Config::getInstance();
-        $files = File::scanDir($ConfPath);
+        $files = File::scanDirectory($ConfPath);
         if (!is_array($files)) {
             return;
         }
