@@ -13,7 +13,7 @@ class Index extends Base
         // $str = EASYSWOOLE_ROOT.'/App/Config/database.php';
         $Conf = Config::getInstance()->getConf('database');
         // $this->response()->write('Hello World');
-        $this->writeJson(200, $str, 'success');
+        $this->writeJson(200, $Conf, 'success');
     }
 
     public function test()
