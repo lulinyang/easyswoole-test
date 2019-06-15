@@ -9,7 +9,7 @@ class Index extends Base
     public function index()
     {
         // $conf = Config::getInstance()->load('database.php');
-        $Conf = Config::getInstance()->loadFile('database.php');
+        $Conf = Config::getInstance()->loadFile(EASYSWOOLE_ROOT.'/App/Config/database');
         // $this->response()->write('Hello World');
         $this->writeJson(200, $conf, 'success');
     }
