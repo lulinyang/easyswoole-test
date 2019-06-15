@@ -13,7 +13,7 @@
             'fetch_mode' => false, //开启fetch模式, 可与pdo一样使用fetch/fetchAll逐行或获取全部结果集(4.0版本以上)
             'alias' => '', //子查询别名
             'isSubQuery' => false, //是否为子查询
-            'max_reconnect_times ' => '3', //最大重连次数
+            'max_reconnect_times' => '3', //最大重连次数
 
             //连接池配置需要根据注册时返回的poolconfig进行配置,只在这里配置无效
             'intervalCheckTime' => 30 * 1000, //定时验证对象是否可用以及保持最小连接的间隔时间
