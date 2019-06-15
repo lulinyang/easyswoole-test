@@ -22,11 +22,12 @@ class BaseModel extends Model
                 }
             }
         }
-        $sql = $this->getDb()->getLastQuery();
+
         $list = $this->getDb()
             // ->withTotalCount()
             // ->orderBy('created_at', 'DESC')
             ->get($this->tableName, [$pageSize * ($page - 1), $pageSize]);
+        $sql = $this->getDb()->getLastQuery();
         $total = $this->getDb()->getTotalCount();
 
         return ['total' => $total, 'pageNo' => $page, 'list' => $list, 'condition' => $condition, 'db' => $$sql];
