@@ -36,7 +36,7 @@ class EasySwooleEvent implements Event
         if (!is_array($files)) {
             return;
         }
-        foreach ($files as $file) {
+        foreach ($files['files'] as $file) {
             var_dump('=====', $file);
             $data = require_once $file;
             $Conf->setConf(strtolower(basename($file, '.php')), (array) $data);
