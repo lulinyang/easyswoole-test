@@ -6,7 +6,9 @@ class Index extends Base
 {
     public function index()
     {
-        $this->response()->write('Hello World');
+        $conf = Config::getInstance()->getConf('SERVER_NAME');
+        // $this->response()->write('Hello World');
+        var_dump($conf);
     }
 
     public function test()

@@ -3,7 +3,7 @@
 namespace App\HttpController;
 
 use EasySwoole\Template\Render;
-use App\Tools\PlatesRender;
+use App\Utility\PlatesRender;
 use EasySwoole\Http\AbstractInterface\Controller;
 
 class Base extends Controller

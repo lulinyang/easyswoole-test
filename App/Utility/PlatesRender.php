@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Tools;
+namespace App\Utility;
 
 use EasySwoole\Template\RenderInterface;
 use League\Plates\Engine;
