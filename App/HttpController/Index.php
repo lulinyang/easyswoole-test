@@ -19,9 +19,11 @@ class Index extends Base
                 //new 一个条件类,方便传入条件
                 $conditionBean = new ConditionBean();
                 $conditionBean->addWhere('name', '', '<>');
+                // $conditionBean->setPagination($pageNo, $limit);
                 $conditionBean->addOrderBy('created_at', 'DESC');
+                $this->writeJson(200, $conditionBean->toArray([], SplBean::FILTER_NOT_NULL), 'success');
 
-                return $user->getAll($conditionBean->toArray([], SplBean::FILTER_NOT_NULL));
+                return $user->paginate($conditionBean->toArray([], SplBean::FILTER_NOT_NULL));
             });
             $this->writeJson(200, $data, 'success');
         } catch (\Throwable $throwable) {
@@ -33,23 +35,8 @@ class Index extends Base
         }
     }
 
-    public function add()
+    public function find($id = 1)
     {
-        return MysqlPool::invoke(function (MysqlObject $db) {
-            $memberModel = new MemberModel($db);
-            $memberBean = new MemberBean();
-            $memberBean->setMobile(123156);
-            $memberBean->setName('仙士可');
-            $memberBean->setPassword(md5(123456));
-            $result = $memberModel->register($memberBean);
-            if ($result === false) {
-                $this->response()->withStatus(Status::CODE_BAD_REQUEST);
-                $this->response()->write('新增错误!');
-
-                return false;
-            }
-            $this->response()->write('新增成功');
-        });
     }
 
     public function test()
