@@ -44,9 +44,10 @@ class BaseModel extends Model
             }
         }
         $data = $this->getDb()->getOne($this->tableName);
-        $sql = $this->getDb()->getLastQuery();
+        // $sql = $this->getDb()->getLastQuery();
 
-        return  ['data' => $data, 'sql' => $sql];
+        // return  ['data' => $data, 'sql' => $sql];
+        return $data;
     }
 
     public function update(MemberBean $memberBean, array $data)
