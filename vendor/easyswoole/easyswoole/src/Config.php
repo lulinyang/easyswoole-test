@@ -109,7 +109,6 @@ class Config
      */
     public function loadFile($filePath, $merge = false)
     {
-        var_dump($filePath);
         if (is_file($filePath)) {
             $confData = require_once $filePath;
             if (is_array($confData) && !empty($confData)) {
