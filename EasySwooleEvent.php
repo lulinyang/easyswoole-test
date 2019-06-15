@@ -40,7 +40,7 @@ class EasySwooleEvent implements Event
         }
         foreach ($files['files'] as $file) {
             $data = require_once $file;
-            $Conf->setConf(strtolower(basename($file, '.php')), (array) $data);
+            $Conf->setConf(strtoupper(basename($file, '.php')), (array) $data);
         }
     }
 
