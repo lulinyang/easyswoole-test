@@ -10,4 +10,9 @@ class Index extends Controller
     {
         $this->response()->write('Hello World');
     }
+
+    public function test()
+    {
+        $this->response()->write('Hello World');
+    }
 }
