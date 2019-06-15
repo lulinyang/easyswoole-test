@@ -22,7 +22,7 @@ class EasySwooleEvent implements Event
         date_default_timezone_set('Asia/Shanghai');
         // var_dump(EASYSWOOLE_ROOT.'/App/Config');
         self::loadConf(EASYSWOOLE_ROOT.'/App/Config');
-        // $dbConf = Config::getInstance()->getConf('database');
+        $dbConf = Config::getInstance()->getConf('database');
         // $redisConf = Config::getInstance()->getConf('redis');
         // var_dump($redisConf);
         // $mysqlConfig = new \EasySwoole\Mysqli\Config(\EasySwoole\EasySwoole\Config::getInstance()->getConf('MYSQL'));
@@ -39,11 +39,8 @@ class EasySwooleEvent implements Event
             return;
         }
         foreach ($files['files'] as $file) {
-            var_dump($file);
             $data = require_once $file;
-            var_dump($data);
-            $Conf->load($data);
-            // $Conf->setConf(strtolower(basename($file, '.php')), (array) $data);
+            $Conf->setConf(strtolower(basename($file, '.php')), (array) $data);
         }
     }
 
