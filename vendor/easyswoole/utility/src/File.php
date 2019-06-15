@@ -282,7 +282,6 @@ class File
      */
     public static function scanDirectory($dirPath)
     {
-        var_dump('pp', !is_dir($dirPath), $dirPath);
         if (!is_dir($dirPath)) {
             return false;
         }

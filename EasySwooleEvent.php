@@ -37,7 +37,7 @@ class EasySwooleEvent implements Event
             return;
         }
         foreach ($files as $file) {
-            var_dump($file);
+            var_dump('=====', $file);
             $data = require_once $file;
             $Conf->setConf(strtolower(basename($file, '.php')), (array) $data);
         }
