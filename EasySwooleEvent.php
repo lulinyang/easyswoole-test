@@ -32,6 +32,7 @@ class EasySwooleEvent implements Event
     {
         $Conf = \EasySwoole\EasySwoole\Config::getInstance();
         $files = File::scanDirectory($ConfPath);
+        var_dump($files);
         if (!is_array($files)) {
             return;
         }
