@@ -8,7 +8,7 @@ class Index extends Base
 {
     public function index()
     {
-        $conf = Config::getInstance()->getConf('SERVER_NAME');
+        $conf = Config::getInstance()->getConf('MAIN_SERVER');
         // $this->response()->write('Hello World');
         $this->writeJson($conf);
     }
