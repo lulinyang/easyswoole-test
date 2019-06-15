@@ -13,6 +13,6 @@ class Index extends Controller
 
     public function test()
     {
-        $this->response()->write('Hello World');
+        $this->response()->write('去你大爷的');
     }
 }
