@@ -32,6 +32,25 @@ class Index extends Base
         }
     }
 
+    public function add()
+    {
+        return MysqlPool::invoke(function (MysqlObject $db) {
+            $memberModel = new MemberModel($db);
+            $memberBean = new MemberBean();
+            $memberBean->setMobile(123156);
+            $memberBean->setName('仙士可');
+            $memberBean->setPassword(md5(123456));
+            $result = $memberModel->register($memberBean);
+            if ($result === false) {
+                $this->response()->withStatus(Status::CODE_BAD_REQUEST);
+                $this->response()->write('新增错误!');
+
+                return false;
+            }
+            $this->response()->write('新增成功');
+        });
+    }
+
     public function test()
     {
         $this->response()->write('去你大爷的');
