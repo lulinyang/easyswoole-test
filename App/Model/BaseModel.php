@@ -30,7 +30,7 @@ class BaseModel extends Model
         $sql = $this->getDb()->getLastQuery();
         $total = $this->getDb()->getTotalCount();
 
-        return ['total' => $total, 'pageNo' => $page, 'list' => $list, 'condition' => $condition, 'db' => $$sql];
+        return ['total' => $total, 'pageNo' => $page, 'list' => $list, 'db' => $sql];
     }
 
     public function find(MemberBean $userBean): ?MemberBean
