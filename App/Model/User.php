@@ -27,7 +27,7 @@ class User extends BaseModel
             ->get($this->tableName, [$pageSize * ($page - 1), $pageSize]);
         $total = $this->getDb()->getTotalCount();
 
-        return ['total' => $total, 'list' => $list];
+        return ['total' => $total, 'pageNo' => $page, 'list' => $list];
     }
 
     /**
