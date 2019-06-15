@@ -20,7 +20,7 @@ class EasySwooleEvent implements Event
     {
         // TODO: Implement initialize() method.
         date_default_timezone_set('Asia/Shanghai');
-        var_dump(EASYSWOOLE_ROOT.'/App/Conf');
+        // var_dump(EASYSWOOLE_ROOT.'/App/Conf');
         self::loadConf(EASYSWOOLE_ROOT.'/Conf');
         // $mysqlConfig = new \EasySwoole\Mysqli\Config(\EasySwoole\EasySwoole\Config::getInstance()->getConf('MYSQL'));
         // $poolConfig = \EasySwoole\MysqliPool\Mysql::getInstance()->register('mysql', $mysqlConfig);
