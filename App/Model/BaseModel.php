@@ -28,7 +28,7 @@ class BaseModel extends Model
             ->get($this->tableName, [$pageSize * ($page - 1), $pageSize]);
         $total = $this->getDb()->getTotalCount();
 
-        return ['total' => $total, 'pageNo' => $page, 'list' => $list, 'condition' => $condition, 'db' => $this->getDb()];
+        return ['total' => $total, 'pageNo' => $page, 'list' => $list, 'condition' => $condition, 'db' => $this->getDb()->withTotalCount()];
     }
 
     public function find(MemberBean $userBean): ?MemberBean
