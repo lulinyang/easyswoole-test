@@ -13,7 +13,8 @@ class Router extends AbstractRouter
     {
         $this->setGlobalMode(true);
         // TODO: Implement initialize() method.
-        // $routeCollector->get('/user', '/index.html');
+        $routeCollector->get('/', '/Index/index');
+        $routeCollector->get('/websocket', '/WebSocket/index');
         // $routeCollector->get('/rpc', '/Rpc/index');
 
         // $routeCollector->get('/', function (Request $request, Response $response) {
