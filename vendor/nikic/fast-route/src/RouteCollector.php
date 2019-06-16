@@ -32,13 +32,14 @@ class RouteCollector
      * The syntax used in the $route string depends on the used route parser.
      *
      * @param string|string[] $httpMethod
-     * @param string $route
-     * @param mixed  $handler
+     * @param string          $route
+     * @param mixed           $handler
      */
     public function addRoute($httpMethod, $route, $handler)
     {
-        $route = $this->currentGroupPrefix . $route;
+        $route = $this->currentGroupPrefix.$route;
         $routeDatas = $this->routeParser->parse($route);
+        $this->writeJson(200, ['a' => $route, 'b' => $routeDatas, 'c' => $this->currentGroupPrefix], 'success');
         foreach ((array) $httpMethod as $method) {
             foreach ($routeDatas as $routeData) {
                 $this->dataGenerator->addRoute($method, $routeData, $handler);
@@ -51,20 +52,20 @@ class RouteCollector
      *
      * All routes created in the passed callback will have the given group prefix prepended.
      *
-     * @param string $prefix
+     * @param string   $prefix
      * @param callable $callback
      */
     public function addGroup($prefix, callable $callback)
     {
         $previousGroupPrefix = $this->currentGroupPrefix;
-        $this->currentGroupPrefix = $previousGroupPrefix . $prefix;
+        $this->currentGroupPrefix = $previousGroupPrefix.$prefix;
         $callback($this);
         $this->currentGroupPrefix = $previousGroupPrefix;
     }
 
     /**
-     * Adds a GET route to the collection
-     * 
+     * Adds a GET route to the collection.
+     *
      * This is simply an alias of $this->addRoute('GET', $route, $handler)
      *
      * @param string $route
@@ -76,8 +77,8 @@ class RouteCollector
     }
 
     /**
-     * Adds a POST route to the collection
-     * 
+     * Adds a POST route to the collection.
+     *
      * This is simply an alias of $this->addRoute('POST', $route, $handler)
      *
      * @param string $route
@@ -89,8 +90,8 @@ class RouteCollector
     }
 
     /**
-     * Adds a PUT route to the collection
-     * 
+     * Adds a PUT route to the collection.
+     *
      * This is simply an alias of $this->addRoute('PUT', $route, $handler)
      *
      * @param string $route
@@ -102,8 +103,8 @@ class RouteCollector
     }
 
     /**
-     * Adds a DELETE route to the collection
-     * 
+     * Adds a DELETE route to the collection.
+     *
      * This is simply an alias of $this->addRoute('DELETE', $route, $handler)
      *
      * @param string $route
@@ -115,8 +116,8 @@ class RouteCollector
     }
 
     /**
-     * Adds a PATCH route to the collection
-     * 
+     * Adds a PATCH route to the collection.
+     *
      * This is simply an alias of $this->addRoute('PATCH', $route, $handler)
      *
      * @param string $route
@@ -128,7 +129,7 @@ class RouteCollector
     }
 
     /**
-     * Adds a HEAD route to the collection
+     * Adds a HEAD route to the collection.
      *
      * This is simply an alias of $this->addRoute('HEAD', $route, $handler)
      *
