@@ -23,7 +23,7 @@ class EasySwooleEvent implements Event
         date_default_timezone_set('Asia/Shanghai');
         self::loadConf(EASYSWOOLE_ROOT.'/App/Config');
         $conf = Config::getInstance()->getConf('DATABASE.REDIS');
-        var_dump('aaa', $conf);
+        // var_dump('aaa', $conf);
     }
 
     public static function loadConf($ConfPath)
