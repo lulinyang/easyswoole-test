@@ -23,11 +23,6 @@ class WebSocket extends Controller
         $this->response()->end();
     }
 
-    public function reply()
-    {
-        $this->response()->setMessage('call aaaahello with arg:'.json_encode(['a' => 'liaa']));
-    }
-
     /**
      * 使用HTTP触发广播给所有的WS客户端.
      *

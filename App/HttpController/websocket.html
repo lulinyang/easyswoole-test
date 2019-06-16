@@ -55,7 +55,7 @@
         var action = $("#action").val();
         $("#says").val('');
         websocket.send(JSON.stringify({
-            class: 'WebSocket',
+            class: 'Index',
             action: 'reply',
             content: content
         }));
