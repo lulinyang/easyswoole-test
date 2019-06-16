@@ -12,9 +12,11 @@ class Router extends AbstractRouter
     public function initialize(RouteCollector $routeCollector)
     {
         $this->setGlobalMode(true);
+
         $routeCollector->addRoute(['GET', 'POST'], '/', '/Index/index');
         $routeCollector->addRoute(['GET', 'POST'], '/list', '/Index/list');
         $routeCollector->addRoute(['GET', 'POST'], '/websocket', '/WebSocket/index');
+
         $this->setMethodNotAllowCallBack(function (Request $request, Response $response) {
             $response->write('未找到处理方法');
         });
