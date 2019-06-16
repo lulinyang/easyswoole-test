@@ -115,7 +115,6 @@ abstract class Controller
         $this->config = $config;
         $this->server = $server;
         $actionName = $request->getAction();
-        var_dump('actionName', $actionName);
         try {
             if ($this->onRequest($actionName) !== false) {
                 if (in_array($actionName, $this->allowMethods)) {
