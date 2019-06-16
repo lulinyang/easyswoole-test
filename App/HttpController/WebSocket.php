@@ -2,7 +2,7 @@
 
 namespace App\HttpController;
 
-class webSocket extends base
+class WebSocket extends base
 {
     public function index()
     {
