@@ -13,10 +13,10 @@ class Router extends AbstractRouter
     {
         // $this->setGlobalMode(true);
         // $this->setGlobalMode(false);
-        $routeCollector->get('/', '/Index/index');
-        $routeCollector->get('/', '/');
-        $routeCollector->get('/test', '/test');
-        $routeCollector->get('/bb', '/WebSocket');
+        $routeCollector->get('/', function (Request $request, Response $response) {
+            $response->write('this router index');
+            $response->end();
+        });
         $this->setMethodNotAllowCallBack(function (Request $request, Response $response) {
             $response->write('未找到处理方法');
         });
