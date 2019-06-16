@@ -12,7 +12,7 @@ class BaseModel extends Model
     /**
      * 查询分页数据.
      */
-    public function paginate($condition = [], int $page = 1, $pageSize = 10): array
+    public function paginate(array $condition, int $page = 1, $pageSize = 10): array
     {
         $allow = ['where', 'orWhere', 'join', 'orderBy', 'groupBy'];
         foreach ($condition as $k => $v) {
@@ -23,30 +23,29 @@ class BaseModel extends Model
             }
         }
 
-        $list = $this->getDb()
-            // ->withTotalCount()
-            // ->orderBy('created_at', 'DESC')
-            ->get($this->tableName, [$pageSize * ($page - 1), $pageSize]);
+        $list = $this->getDb()->get($this->tableName, [$pageSize * ($page - 1), $pageSize]);
         // $sql = $this->getDb()->getLastQuery();
         $total = $this->getDb()->getTotalCount();
 
         return ['total' => $total, 'pageNo' => $page, 'list' => $list];
     }
 
-    public function find($condition = [])
+    public function find($condition = [], $columns = '*')
     {
-        $allow = ['where', 'orWhere', 'join'];
-        foreach ($condition as $k => $v) {
-            if (in_array($k, $allow)) {
-                foreach ($v as $item) {
-                    $this->getDb()->$k(...$item);
+        if (!empty($condition)) {
+            $allow = ['where', 'orWhere', 'join'];
+            foreach ($condition as $k => $v) {
+                if (in_array($k, $allow)) {
+                    foreach ($v as $item) {
+                        $this->getDb()->$k(...$item);
+                    }
                 }
             }
+
+            return $this->getDb()->getOne($this->tableName, $columns);
+        } else {
+            return $this->getDb()->where('id', $condition, '=')->getOne($this->tableName, $columns);
         }
-        $data = $this->getDb()->getOne($this->tableName);
-        // $sql = $this->getDb()->getLastQuery();
-        // return  ['data' => $data, 'sql' => $sql];
-        return $data;
     }
 
     public function update(array $condition, array $data)
@@ -66,25 +65,24 @@ class BaseModel extends Model
 
     public function insert(array $data)
     {
-        $data = $this->getDb()->insert($this->tableName, $data);
-        $sql = $this->getDb()->getLastQuery();
-
-        return  ['data' => $data, 'sql' => $sql];
-
-        // return $this->getDb()->insert($this->tableName, $data);
+        return $this->getDb()->insert($this->tableName, $data);
     }
 
-    public function delete(MemberBean $bean)
+    public function delete($condition = [])
     {
-        $allow = ['where', 'orWhere'];
-        foreach ($condition as $k => $v) {
-            if (in_array($k, $allow)) {
-                foreach ($v as $item) {
-                    $this->getDb()->$k(...$item);
+        if (!empty($condition)) {
+            $allow = ['where', 'orWhere'];
+            foreach ($condition as $k => $v) {
+                if (in_array($k, $allow)) {
+                    foreach ($v as $item) {
+                        $this->getDb()->$k(...$item);
+                    }
                 }
             }
-        }
 
-        return $this->getDb()->delete($this->tableName);
+            return $this->getDb()->delete($this->tableName);
+        } else {
+            return $this->getDb()->where('id', $condition, '=')->delete($this->tableName);
+        }
     }
 }

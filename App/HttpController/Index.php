@@ -95,6 +95,24 @@ class Index extends Base
         }
     }
 
+    public function delete()
+    {
+        try {
+            $data = MysqlPool::invoke(function (MysqlObject $db) {
+                $user = new User($db);
+                $conditionBean = new ConditionBean();
+                $conditionBean->addWhere('id', '2', '=');
+
+                return $user->delete($conditionBean->toArray([], SplBean::FILTER_NOT_NULL));
+            });
+            $this->writeJson(200, $data, 'success');
+        } catch (\Throwable $throwable) {
+            $this->writeJson(Status::CODE_BAD_REQUEST, null, $throwable->getMessage());
+        } catch (PoolEmpty $poolEmpty) {
+            $this->writeJson(Status::CODE_BAD_REQUEST, null, '没有链接可用');
+        }
+    }
+
     // public function actionNotFound()
     // {
     //     $this->response()->write('404');
