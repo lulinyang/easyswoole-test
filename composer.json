@@ -11,6 +11,6 @@
         "illuminate/database": "^5.8",
         "easyswoole/mysqli-pool": "^1.0",
         "easyswoole/redis-pool": "^1.0",
-        "easyswoole/socket": "^2.x"
+        "easyswoole/socket": "^1.9"
     }
 }
