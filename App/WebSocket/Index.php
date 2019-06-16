@@ -18,11 +18,6 @@ class Index extends Controller
         $this->response()->setMessage('call aaaahello with arg:'.json_encode($this->caller()->getArgs()));
     }
 
-    public function reply()
-    {
-        $this->response()->setMessage('cllo wi=====g:'.json_encode(['a' => 'liaa']));
-    }
-
     public function who()
     {
         $this->response()->setMessage('your fd is '.$this->caller()->getClient()->getFd());
