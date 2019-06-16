@@ -73,7 +73,6 @@ class Index extends Base
         } catch (PoolUnRegister $poolUnRegister) {
             $this->writeJson(Status::CODE_BAD_REQUEST, null, '连接池未注册');
         }
-        $this->response()->write('去你大爷的');
     }
 
     // public function actionNotFound()

@@ -66,7 +66,12 @@ class BaseModel extends Model
 
     public function insert(array $data)
     {
-        return $this->getDb()->insert($this->tableName, $data);
+        $data = $this->getDb()->insert($this->tableName, $data);
+        $sql = $this->getDb()->getLastQuery();
+
+        return  ['data' => $data, 'sql' => $sql];
+
+        // return $this->getDb()->insert($this->tableName, $data);
     }
 
     public function delete(MemberBean $bean)
