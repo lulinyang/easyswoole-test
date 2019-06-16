@@ -112,4 +112,32 @@ class Index extends Base
             $this->writeJson(Status::CODE_BAD_REQUEST, null, '没有链接可用');
         }
     }
+
+    public function setRedis()
+    {
+        try {
+            $result = RedisPool::invoke(function (RedisObject $redis) {
+                $name = $redis->set('name', '张三');
+
+                return $name;
+            });
+            $this->writeJson(200, $result, 'success');
+        } catch (\Throwable $throwable) {
+            $this->writeJson(Status::CODE_BAD_REQUEST, null, $throwable->getMessage());
+        }
+    }
+
+    public function getRedis()
+    {
+        try {
+            $result = RedisPool::invoke(function (RedisObject $redis) {
+                $name = $redis->get('name');
+
+                return $name;
+            });
+            $this->writeJson(200, $result, 'success');
+        } catch (\Throwable $throwable) {
+            $this->writeJson(Status::CODE_BAD_REQUEST, null, $throwable->getMessage());
+        }
+    }
 }
