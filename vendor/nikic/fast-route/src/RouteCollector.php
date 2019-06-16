@@ -60,7 +60,6 @@ class RouteCollector
         $this->currentGroupPrefix = $previousGroupPrefix.$prefix;
         $callback($this);
         $this->currentGroupPrefix = $previousGroupPrefix;
-        var_dump(['a' => $prefix, 'c' => $this->currentGroupPrefix]);
     }
 
     /**
