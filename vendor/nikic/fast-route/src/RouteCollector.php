@@ -39,7 +39,6 @@ class RouteCollector
     {
         $route = $this->currentGroupPrefix.$route;
         $routeDatas = $this->routeParser->parse($route);
-        var_dump(['a' => $route, 'b' => $routeDatas, 'c' => $this->currentGroupPrefix]);
         foreach ((array) $httpMethod as $method) {
             foreach ($routeDatas as $routeData) {
                 $this->dataGenerator->addRoute($method, $routeData, $handler);
@@ -61,6 +60,7 @@ class RouteCollector
         $this->currentGroupPrefix = $previousGroupPrefix.$prefix;
         $callback($this);
         $this->currentGroupPrefix = $previousGroupPrefix;
+        var_dump(['c' => $this->currentGroupPrefix]);
     }
 
     /**
