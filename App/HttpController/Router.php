@@ -9,7 +9,7 @@ class Router extends AbstractRouter
 {
     public function initialize(RouteCollector $routeCollector)
     {
-        $this->setGlobalMode(true);
+        // $this->setGlobalMode(true);
         $routeCollector->get('/', '/Index/index');
         $routeCollector->get('/websocket', '/WebSocket/index');
     }
