@@ -32,12 +32,12 @@ class Base extends Controller
 
     public function actionNotFound()
     {
-        // $this->response()->write('404');
-        $this->setMethodNotAllowCallBack(function (Request $request, Response $response) {
-            $response->write('未找到处理方法');
+        $this->response()->write('404');
+        // $this->setMethodNotAllowCallBack(function (Request $request, Response $response) {
+        //     $response->write('未找到处理方法');
 
-            return false; //结束此次响应
-        });
+        //     return false; //结束此次响应
+        // });
         // $this->setRouterNotFoundCallBack(function (Request $request, Response $response) {
         //     $response->write('未找到路由匹配');
 
