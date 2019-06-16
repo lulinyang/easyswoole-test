@@ -689,3 +689,19 @@ Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate
 [2019-06-16 14:23:46 *24495.0]	WARNING	http_request_on_body (ERRNO 9010): parse multipart body failed, n=40
 [2019-06-16 14:23:47 *24495.0]	WARNING	http_request_on_body (ERRNO 9010): parse multipart body failed, n=40
 [2019-06-16 14:23:48 *24495.0]	WARNING	http_request_on_body (ERRNO 9010): parse multipart body failed, n=40
+[2019-06-16 14:29:55 $23732.0]	INFO	Server is reloading all workers now
+[2019-06-16 14:29:58 *24495.0]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-16 14:30:49 $23732.0]	INFO	Server is reloading all workers now
+[2019-06-16 14:31:51 $23732.0]	INFO	Server is reloading all workers now
+[2019-06-16 14:35:33 $23732.0]	INFO	Server is reloading all workers now
+[2019-06-16 14:35:46 *24700.0]	WARNING	http_request_on_body (ERRNO 9010): parse multipart body failed, n=40
+[45m[2019-06-16 14:35:46][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[2019-06-16 14:35:55 *24700.0]	WARNING	http_request_on_body (ERRNO 9010): parse multipart body failed, n=40
+[2019-06-16 14:42:16 $23732.0]	INFO	Server is reloading all workers now
+[2019-06-16 14:42:19 $23732.0]	WARNING	swManager_kill_timeout_process (ERRNO 9012): [Manager] Worker#0[pid=24700] exit timeout, forced kill
+[2019-06-16 14:42:29 *24755.0]	WARNING	http_request_on_body (ERRNO 9010): parse multipart body failed, n=40
+[45m[2019-06-16 14:42:29][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[2019-06-16 14:43:40 $23732.0]	INFO	Server is reloading all workers now
+[2019-06-16 14:43:43 *24808.0]	WARNING	http_request_on_body (ERRNO 9010): parse multipart body failed, n=40
+[45m[2019-06-16 14:43:43][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[2019-06-16 14:44:06 *24808.0]	WARNING	http_request_on_body (ERRNO 9010): parse multipart body failed, n=40
