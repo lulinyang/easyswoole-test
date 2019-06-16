@@ -112,9 +112,4 @@ class Index extends Base
             $this->writeJson(Status::CODE_BAD_REQUEST, null, '没有链接可用');
         }
     }
-
-    // public function actionNotFound()
-    // {
-    //     $this->response()->write('404');
-    // }
 }

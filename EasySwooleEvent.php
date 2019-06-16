@@ -13,7 +13,6 @@ use EasySwoole\EasySwoole\AbstractInterface\Event;
 use EasySwoole\Http\Request;
 use EasySwoole\Http\Response;
 use EasySwoole\Utility\File;
-use EasySwoole\MysqliPool\Mysql;
 use EasySwoole\Http\Message\Status;
 
 class EasySwooleEvent implements Event
@@ -23,10 +22,8 @@ class EasySwooleEvent implements Event
         // TODO: Implement initialize() method.
         date_default_timezone_set('Asia/Shanghai');
         self::loadConf(EASYSWOOLE_ROOT.'/App/Config');
-        // $dbConf = Config::getInstance()->getConf('DATABASE');
-        // $mysqlConfig = new \EasySwoole\Mysqli\Config($dbConf['MYSQL']);
-        // $poolConfig = Mysql::getInstance()->register('mysql', $mysqlConfig);
-        // $poolConfig->setMaxObjectNum($dbConf['MYSQL']['maxObjectNum']);
+        $conf = Config::getInstance()->getConf('DATABASE.REDIS');
+        var_dump($conf);
     }
 
     public static function loadConf($ConfPath)
