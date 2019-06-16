@@ -85,7 +85,7 @@ class Index extends Base
                     'password' => Hash::makePasswordHash('123456'),
                 ];
 
-                return $user->update($conditionBean, $arr);
+                return $user->update($conditionBean->toArray([], SplBean::FILTER_NOT_NULL), $arr);
             });
             $this->writeJson(200, $data, 'success');
         } catch (\Throwable $throwable) {
