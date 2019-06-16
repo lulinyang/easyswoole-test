@@ -29,12 +29,15 @@
     var websocket = new WebSocket(wsServer);
     window.onload = function () {
         websocket.onopen = function (evt) {
+            console.log('evt', evt);
             addLine("Connected to WebSocket server.");
         };
         websocket.onclose = function (evt) {
+            console.log('Disconnected', evt);
             addLine("Disconnected");
         };
         websocket.onmessage = function (evt) {
+            console.log('Retrieved data from server', evt);
             addLine('Retrieved data from server: ' + evt.data);
         };
         websocket.onerror = function (evt, e) {
