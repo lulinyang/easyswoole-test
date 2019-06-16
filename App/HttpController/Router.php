@@ -13,7 +13,10 @@ class Router extends AbstractRouter
     {
         $this->setGlobalMode(true);
         // $this->setGlobalMode(false);
-        $routeCollector->addRoute(['GET', 'POST'], '/', '/Index/index');
+        $routeCollector->addGroup('Index', function () {
+            $routeCollector->addRoute(['GET', 'POST'], '/', 'index');
+        });
+        // $routeCollector->addRoute(['GET', 'POST'], '/', '/Index/index');
         $routeCollector->addRoute(['GET', 'POST'], '/list', '/Index/list');
         $routeCollector->addRoute(['GET', 'POST'], '/websocket', '/WebSocket/index');
         $this->setMethodNotAllowCallBack(function (Request $request, Response $response) {
