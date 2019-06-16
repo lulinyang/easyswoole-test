@@ -53,8 +53,26 @@ class Index extends Base
         }
     }
 
-    public function test()
+    public function add()
     {
+        try {
+            $data = MysqlPool::invoke(function (MysqlObject $db) {
+                $user = new User($db);
+                $arr = [
+                    'name' => '张三',
+                    'email' => '12228380958@qq.com',
+                ];
+
+                return $user->insert($arr);
+            });
+            $this->writeJson(200, $data, 'success');
+        } catch (\Throwable $throwable) {
+            $this->writeJson(Status::CODE_BAD_REQUEST, null, $throwable->getMessage());
+        } catch (PoolEmpty $poolEmpty) {
+            $this->writeJson(Status::CODE_BAD_REQUEST, null, '没有链接可用');
+        } catch (PoolUnRegister $poolUnRegister) {
+            $this->writeJson(Status::CODE_BAD_REQUEST, null, '连接池未注册');
+        }
         $this->response()->write('去你大爷的');
     }
 

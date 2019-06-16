@@ -45,25 +45,41 @@ class BaseModel extends Model
         }
         $data = $this->getDb()->getOne($this->tableName);
         // $sql = $this->getDb()->getLastQuery();
-
         // return  ['data' => $data, 'sql' => $sql];
         return $data;
     }
 
-    public function update(MemberBean $memberBean, array $data)
+    public function update(array $condition, array $data)
     {
-        $this->getDb()->where('member_id', $memberBean->getMemberId())->update($this->table, $data);
+        $allow = ['where', 'orWhere'];
+        foreach ($condition as $k => $v) {
+            if (in_array($k, $allow)) {
+                foreach ($v as $item) {
+                    $this->getDb()->$k(...$item);
+                }
+            }
+        }
+        $this->getDb()->update($this->tableName, $data);
 
         return $this->getDb()->getAffectRows();
     }
 
-    public function register(MemberBean $bean)
+    public function insert(array $data)
     {
-        return $this->getDb()->insert($this->table, $bean->toArray());
+        return $this->getDb()->insert($this->tableName, $data);
     }
 
     public function delete(MemberBean $bean)
     {
-        return $this->getDb()->where('member_id', $bean->getMemberId())->delete($this->table);
+        $allow = ['where', 'orWhere'];
+        foreach ($condition as $k => $v) {
+            if (in_array($k, $allow)) {
+                foreach ($v as $item) {
+                    $this->getDb()->$k(...$item);
+                }
+            }
+        }
+
+        return $this->getDb()->delete($this->tableName);
     }
 }
