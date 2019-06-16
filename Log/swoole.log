@@ -1,0 +1,73 @@
+[2019-06-16 20:34:38 $10487.0]	WARNING	swManager_check_exit_status: worker#0[pid=10497] abnormal exit, status=255, signal=0
+[2019-06-16 20:36:21 #10486.1]	INFO	Server is shutdown now
+[2019-06-16 20:37:46 #10543.1]	INFO	Server is shutdown now
+[2019-06-16 20:37:49 *10554.0]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-16 20:41:51 #10600.1]	INFO	Server is shutdown now
+[2019-06-16 20:41:53 *10611.0]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-16 20:48:57 #10658.1]	INFO	Server is shutdown now
+[2019-06-16 20:49:00 *10669.0]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+string(22) "shake success at fd :4"
+[2019-06-16 20:56:57 $10744.0]	INFO	Server is reloading all workers now
+[2019-06-16 20:56:59 *10754.0]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[43m[2019-06-16 20:57:04][DEBUG][NOTICE] : [Undefined variable: routeCollector at file:/home/wwwroot/easyswooe/App/HttpController/Router.php line:17][0m
+[41m[2019-06-16 20:57:04][DEBUG][ERROR] : [Call to a member function addRoute() on null at file:/home/wwwroot/easyswooe/vendor/easyswoole/http/src/Dispatcher.php line:74][0m
+[2019-06-16 20:59:15 $10744.0]	INFO	Server is reloading all workers now
+[2019-06-16 21:01:23 $10744.0]	INFO	Server is reloading all workers now
+[2019-06-16 21:04:28 $10744.0]	INFO	Server is reloading all workers now
+[41m[2019-06-16 21:04:32][DEBUG][ERROR] : [Call to undefined method FastRoute\RouteCollector::writeJson() at file:/home/wwwroot/easyswooe/vendor/easyswoole/http/src/Dispatcher.php line:74][0m
+[2019-06-16 21:05:49 #10743.1]	INFO	Server is shutdown now
+[2019-06-16 21:10:33 #11083.1]	INFO	Server is shutdown now
+[2019-06-16 21:12:37 #11140.1]	INFO	Server is shutdown now
+[2019-06-16 21:14:57 #11222.1]	INFO	Server is shutdown now
+[2019-06-16 21:20:19 $11280.0]	INFO	Server is reloading all workers now
+string(22) "shake success at fd :5"
+string(22) "shake success at fd :8"
+string(23) "shake success at fd :10"
+[2019-06-16 21:38:10 $11280.0]	INFO	Server is reloading all workers now
+string(23) "shake success at fd :12"
+string(23) "shake success at fd :13"
+[2019-06-16 21:43:00 $11280.0]	INFO	Server is reloading all workers now
+string(23) "shake success at fd :15"
+string(23) "shake success at fd :16"
+string(23) "shake success at fd :17"
+string(23) "shake success at fd :18"
+string(23) "shake success at fd :19"
+string(23) "shake success at fd :20"
+string(23) "shake success at fd :21"
+string(23) "shake success at fd :22"
+string(23) "shake success at fd :23"
+string(23) "shake success at fd :24"
+string(23) "shake success at fd :25"
+string(23) "shake success at fd :26"
+string(23) "shake success at fd :28"
+string(23) "shake success at fd :29"
+string(23) "shake success at fd :30"
+[2019-06-16 21:49:29 $11280.0]	INFO	Server is reloading all workers now
+string(23) "shake success at fd :33"
+string(23) "shake success at fd :34"
+[2019-06-16 21:50:43 $11280.0]	INFO	Server is reloading all workers now
+string(23) "shake success at fd :36"
+string(23) "shake success at fd :38"
+string(23) "shake success at fd :39"
+string(23) "shake success at fd :40"
+string(23) "shake success at fd :41"
+[2019-06-16 21:53:52 $11280.0]	INFO	Server is reloading all workers now
+string(23) "shake success at fd :43"
+string(23) "shake success at fd :44"
+string(23) "shake success at fd :45"
+string(23) "shake success at fd :46"
+string(23) "shake success at fd :47"
+string(23) "shake success at fd :49"
+[2019-06-16 22:06:19 #11279.1]	INFO	Server is shutdown now
+[2019-06-16 22:11:05 #11808.1]	INFO	Server is shutdown now
+[2019-06-16 22:16:43 #11866.1]	INFO	Server is shutdown now
+[2019-06-16 22:19:52 #11924.1]	INFO	Server is shutdown now
+[2019-06-16 22:25:12 #12005.1]	INFO	Server is shutdown now
+[2019-06-16 22:28:46 #12062.1]	INFO	Server is shutdown now
+[2019-06-16 22:35:02 #12119.1]	INFO	Server is shutdown now
+[2019-06-16 22:35:14 $12203.0]	WARNING	swManager_check_exit_status: worker#2[pid=12215] abnormal exit, status=255, signal=0
+[2019-06-16 22:39:01 #12202.1]	INFO	Server is shutdown now
+[2019-06-16 22:39:22 $12262.0]	WARNING	swManager_check_exit_status: worker#2[pid=12274] abnormal exit, status=255, signal=0
+[2019-06-16 22:46:21 #12261.1]	INFO	Server is shutdown now
+[2019-06-16 22:48:05 #12344.1]	INFO	Server is shutdown now
+[2019-06-16 22:48:29 #12390.1]	INFO	Server is shutdown now
