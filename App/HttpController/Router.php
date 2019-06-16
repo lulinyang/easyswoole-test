@@ -13,8 +13,8 @@ class Router extends AbstractRouter
     {
         $this->setGlobalMode(true);
         // $this->setGlobalMode(false);
-        $routeCollector->addGroup('Index', function () {
-            $routeCollector->addRoute(['GET', 'POST'], '/', 'index');
+        $routeCollector->addGroup('Index', function ($route) {
+            $route->addRoute(['GET', 'POST'], '/', 'index');
         });
         // $routeCollector->addRoute(['GET', 'POST'], '/', '/Index/index');
         $routeCollector->addRoute(['GET', 'POST'], '/list', '/Index/list');
