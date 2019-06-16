@@ -17,6 +17,7 @@ class Router extends AbstractRouter
             $response->write('this router index');
             $response->end();
         });
+        $routeCollector->addRoute(['GET', 'POST'], '/b', '/WebSocket/index');
         $this->setMethodNotAllowCallBack(function (Request $request, Response $response) {
             $response->write('未找到处理方法');
         });
