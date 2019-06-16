@@ -5,6 +5,8 @@ namespace App\HttpController;
 use EasySwoole\Template\Render;
 use App\Utility\PlatesRender;
 use EasySwoole\Http\AbstractInterface\Controller;
+use EasySwoole\Http\Request;
+use EasySwoole\Http\Response;
 
 class Base extends Controller
 {
