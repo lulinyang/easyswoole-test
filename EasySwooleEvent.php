@@ -14,6 +14,7 @@ use EasySwoole\Http\Request;
 use EasySwoole\Http\Response;
 use EasySwoole\Utility\File;
 use EasySwoole\Http\Message\Status;
+use App\WebSocket\WebSocketParser;
 
 class EasySwooleEvent implements Event
 {
