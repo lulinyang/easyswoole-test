@@ -15,7 +15,7 @@ class Index extends Controller
 {
     public function hello()
     {
-        $this->response()->setMessage('call hello with arg:'.json_encode($this->caller()->getArgs()));
+        $this->response()->setMessage('call aaaahello with arg:'.json_encode($this->caller()->getArgs()));
     }
 
     public function who()
