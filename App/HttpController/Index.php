@@ -58,9 +58,11 @@ class Index extends Base
         try {
             $data = MysqlPool::invoke(function (MysqlObject $db) {
                 $user = new User($db);
+                $password = '123456';
                 $arr = [
                     'name' => '张三',
                     'email' => '12228380958@qq.com',
+                    'password' => Hash::makePasswordHash($password),
                 ];
 
                 return $user->insert($arr);
