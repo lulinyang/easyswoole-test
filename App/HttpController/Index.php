@@ -8,6 +8,7 @@ use App\Utility\Pool\MysqlPool;
 use EasySwoole\Spl\SplBean;
 use App\Model\ConditionBean;
 use EasySwoole\Http\Message\Status;
+use EasySwoole\Utility\Hash;
 
 class Index extends Base
 {
