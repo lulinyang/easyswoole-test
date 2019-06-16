@@ -5,6 +5,8 @@ namespace App\HttpController;
 use App\Model\User;
 use App\Utility\Pool\MysqlObject;
 use App\Utility\Pool\MysqlPool;
+use App\Utility\Pool\RedisObject;
+use App\Utility\Pool\RedisPool;
 use EasySwoole\Spl\SplBean;
 use App\Model\ConditionBean;
 use EasySwoole\Http\Message\Status;
