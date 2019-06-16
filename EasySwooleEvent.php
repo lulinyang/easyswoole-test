@@ -26,6 +26,9 @@ class EasySwooleEvent implements Event
         // var_dump('aaa', $conf);
     }
 
+    /**
+     * 加载配置文件.
+     */
     public static function loadConf($ConfPath)
     {
         $Conf = Config::getInstance();

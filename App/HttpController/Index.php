@@ -17,6 +17,13 @@ class Index extends Base
 {
     public function index()
     {
+        $content = file_get_contents(__DIR__.'/websocket.html');
+        $this->response()->write($content);
+        $this->response()->end();
+    }
+
+    public function list()
+    {
         try {
             $data = MysqlPool::invoke(function (MysqlObject $db) {
                 $user = new User($db);
