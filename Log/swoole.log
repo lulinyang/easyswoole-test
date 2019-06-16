@@ -705,3 +705,21 @@ Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate
 [2019-06-16 14:43:43 *24808.0]	WARNING	http_request_on_body (ERRNO 9010): parse multipart body failed, n=40
 [45m[2019-06-16 14:43:43][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
 [2019-06-16 14:44:06 *24808.0]	WARNING	http_request_on_body (ERRNO 9010): parse multipart body failed, n=40
+[2019-06-16 14:55:17 $23732.0]	INFO	Server is reloading all workers now
+[2019-06-16 14:55:19 *24808.0]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[45m[2019-06-16 14:55:41][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[2019-06-16 15:03:46 $23732.0]	INFO	Server is reloading all workers now
+[2019-06-16 15:03:49 *24904.0]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[45m[2019-06-16 15:04:07][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /home/wwwroot/easyswooe/App/HttpController/Base.php on line 34
+
+Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /home/wwwroot/easyswooe/App/HttpController/Base.php on line 34
+[2019-06-16 15:04:08 $23732.0]	WARNING	swManager_check_exit_status: worker#0[pid=24997] abnormal exit, status=255, signal=0
+[2019-06-16 15:05:37 $23732.0]	INFO	Server is reloading all workers now
+[45m[2019-06-16 15:05:40][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+[45m[2019-06-16 15:05:41][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9][0m
+PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /home/wwwroot/easyswooe/App/HttpController/Base.php on line 34
+
+Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /home/wwwroot/easyswooe/App/HttpController/Base.php on line 34
+[2019-06-16 15:05:41 $23732.0]	WARNING	swManager_check_exit_status: worker#1[pid=25053] abnormal exit, status=255, signal=0
+[2019-06-16 15:07:09 #23731.1]	INFO	Server is shutdown now

@@ -214,3 +214,89 @@ Stack trace:
 [2019-06-16 14:35:46][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9]
 [2019-06-16 14:42:29][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9]
 [2019-06-16 14:43:43][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9]
+[2019-06-16 14:55:41][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9]
+[2019-06-16 15:04:07][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9]
+[2019-06-16 15:05:40][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9]
+[2019-06-16 15:05:41][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:9]
+[2019-06-16 15:07:11][DEBUG][ERROR] : [Uncaught Error: Class 'EasySwoole\EasySwoole\WebSocketParser' not found in /home/wwwroot/easyswooe/EasySwooleEvent.php:56
+Stack trace:
+#0 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Core.php(121): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#1 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#2 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#3 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(52): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#4 /home/wwwroot/easyswooe/easyswoole(20): EasySwoole\EasySwoole\Command\CommandRunner->run(Array)
+#5 {main}
+  thrown at file:/home/wwwroot/easyswooe/EasySwooleEvent.php line:56]
+[2019-06-16 15:09:21][DEBUG][ERROR] : [Uncaught Error: Class 'EasySwoole\EasySwoole\Dispatcher' not found in /home/wwwroot/easyswooe/EasySwooleEvent.php:59
+Stack trace:
+#0 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Core.php(121): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#1 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#2 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#3 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(52): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#4 /home/wwwroot/easyswooe/easyswoole(20): EasySwoole\EasySwoole\Command\CommandRunner->run(Array)
+#5 {main}
+  thrown at file:/home/wwwroot/easyswooe/EasySwooleEvent.php line:59]
+[2019-06-16 15:09:23][DEBUG][ERROR] : [Uncaught Error: Class 'EasySwoole\EasySwoole\Dispatcher' not found in /home/wwwroot/easyswooe/EasySwooleEvent.php:59
+Stack trace:
+#0 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Core.php(121): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#1 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#2 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#3 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(52): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#4 /home/wwwroot/easyswooe/easyswoole(20): EasySwoole\EasySwoole\Command\CommandRunner->run(Array)
+#5 {main}
+  thrown at file:/home/wwwroot/easyswooe/EasySwooleEvent.php line:59]
+[2019-06-16 15:09:45][DEBUG][ERROR] : [Uncaught Error: Class 'EasySwoole\EasySwoole\Dispatcher' not found in /home/wwwroot/easyswooe/EasySwooleEvent.php:59
+Stack trace:
+#0 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Core.php(121): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#1 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#2 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#3 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(52): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#4 /home/wwwroot/easyswooe/easyswoole(20): EasySwoole\EasySwoole\Command\CommandRunner->run(Array)
+#5 {main}
+  thrown at file:/home/wwwroot/easyswooe/EasySwooleEvent.php line:59]
+[2019-06-16 15:12:11][DEBUG][ERROR] : [Uncaught TypeError: Argument 1 passed to EasySwoole\Http\Dispatcher::__construct() must be of the type string, object given, called in /home/wwwroot/easyswooe/EasySwooleEvent.php on line 60 and defined in /home/wwwroot/easyswooe/vendor/easyswoole/http/src/Dispatcher.php:31
+Stack trace:
+#0 /home/wwwroot/easyswooe/EasySwooleEvent.php(60): EasySwoole\Http\Dispatcher->__construct(Object(EasySwoole\Socket\Config))
+#1 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Core.php(121): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#2 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(52): EasySwoole\EasySwoole\Command\CommandC at file:/home/wwwroot/easyswooe/vendor/easyswoole/http/src/Dispatcher.php line:31]
+[2019-06-16 15:14:22][DEBUG][ERROR] : [Swoole\Server::start(): require onMessage callback at file:/home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-06-16 15:16:24][DEBUG][ERROR] : [Swoole\Server::start(): require onMessage callback at file:/home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/ServerManager.php line:114]
+[2019-06-16 15:16:34][DEBUG][ERROR] : [Uncaught TypeError: Argument 1 passed to EasySwoole\Http\Dispatcher::__construct() must be of the type string, object given, called in /home/wwwroot/easyswooe/EasySwooleEvent.php on line 61 and defined in /home/wwwroot/easyswooe/vendor/easyswoole/http/src/Dispatcher.php:31
+Stack trace:
+#0 /home/wwwroot/easyswooe/EasySwooleEvent.php(61): EasySwoole\Http\Dispatcher->__construct(Object(EasySwoole\Socket\Config))
+#1 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Core.php(121): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#2 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(52): EasySwoole\EasySwoole\Command\CommandC at file:/home/wwwroot/easyswooe/vendor/easyswoole/http/src/Dispatcher.php line:31]
+[2019-06-16 15:19:17][DEBUG][ERROR] : [Uncaught TypeError: Argument 1 passed to EasySwoole\Http\Dispatcher::__construct() must be of the type string, object given, called in /home/wwwroot/easyswooe/EasySwooleEvent.php on line 61 and defined in /home/wwwroot/easyswooe/vendor/easyswoole/http/src/Dispatcher.php:31
+Stack trace:
+#0 /home/wwwroot/easyswooe/EasySwooleEvent.php(61): EasySwoole\Http\Dispatcher->__construct(Object(EasySwoole\Socket\Config))
+#1 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Core.php(121): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#2 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(52): EasySwoole\EasySwoole\Command\CommandC at file:/home/wwwroot/easyswooe/vendor/easyswoole/http/src/Dispatcher.php line:31]
+[2019-06-16 15:24:36][DEBUG][ERROR] : [Uncaught Error: Cannot access protected property EasySwoole\Socket\Config::$type in /home/wwwroot/easyswooe/EasySwooleEvent.php:62
+Stack trace:
+#0 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Core.php(121): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#1 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#2 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#3 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(52): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#4 /home/wwwroot/easyswooe/easyswoole(20): EasySwoole\EasySwoole\Command\CommandRunner->run(Array)
+#5 {main}
+  thrown at file:/home/wwwroot/easyswooe/EasySwooleEvent.php line:62]
+[2019-06-16 15:39:42][DEBUG][ERROR] : [Uncaught TypeError: Argument 1 passed to EasySwoole\Http\Dispatcher::__construct() must be of the type string, object given, called in /home/wwwroot/easyswooe/EasySwooleEvent.php on line 63 and defined in /home/wwwroot/easyswooe/vendor/easyswoole/http/src/Dispatcher.php:31
+Stack trace:
+#0 /home/wwwroot/easyswooe/EasySwooleEvent.php(63): EasySwoole\Http\Dispatcher->__construct(Object(EasySwoole\Socket\Config))
+#1 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Core.php(121): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#2 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(52): EasySwoole\EasySwoole\Command\CommandC at file:/home/wwwroot/easyswooe/vendor/easyswoole/http/src/Dispatcher.php line:31]
+[2019-06-16 15:51:49][DEBUG][ERROR] : [Uncaught TypeError: Argument 1 passed to EasySwoole\Http\Dispatcher::__construct() must be of the type string, object given, called in /home/wwwroot/easyswooe/EasySwooleEvent.php on line 63 and defined in /home/wwwroot/easyswooe/vendor/easyswoole/http/src/Dispatcher.php:31
+Stack trace:
+#0 /home/wwwroot/easyswooe/EasySwooleEvent.php(63): EasySwoole\Http\Dispatcher->__construct(Object(EasySwoole\Socket\Config))
+#1 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Core.php(121): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#2 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(52): EasySwoole\EasySwoole\Command\CommandC at file:/home/wwwroot/easyswooe/vendor/easyswoole/http/src/Dispatcher.php line:31]

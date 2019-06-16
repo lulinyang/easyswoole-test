@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d55033c08cc3497a90aba01a79aceac8",
+    "content-hash": "e04e503ff0a00615095b6e9392691caa",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -261,16 +261,16 @@
         },
         {
             "name": "easyswoole/http",
-            "version": "1.2.18",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/easy-swoole/http.git",
-                "reference": "12657d5e8ebf9527ca2ba8c7588f6ac59e097620"
+                "reference": "1d53bedaae78cb8ba0d3cf0d0ef21bfe3afe06eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/easy-swoole/http/zipball/12657d5e8ebf9527ca2ba8c7588f6ac59e097620",
-                "reference": "12657d5e8ebf9527ca2ba8c7588f6ac59e097620",
+                "url": "https://api.github.com/repos/easy-swoole/http/zipball/1d53bedaae78cb8ba0d3cf0d0ef21bfe3afe06eb",
+                "reference": "1d53bedaae78cb8ba0d3cf0d0ef21bfe3afe06eb",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -315,7 +315,7 @@
                 "framework",
                 "swoole"
             ],
-            "time": "2019-05-16T07:23:06+00:00"
+            "time": "2019-06-15T09:32:10+00:00"
         },
         {
             "name": "easyswoole/log",
