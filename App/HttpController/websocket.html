@@ -27,13 +27,15 @@
 <script>
     var wsServer = 'ws://192.168.204.129:9501/websocket';
     var websocket = new WebSocket(wsServer);
+    webSocket.send(JSON.stringify({
+        'message': 'admin',
+        'type': 'init'
+    }));
     window.onload = function () {
+
         websocket.onopen = function (evt) {
             console.log('evt', evt);
-            webSocket.send(JSON.stringify({
-                'message': 'admin',
-                'type': 'init'
-            }));
+            
             addLine("Connected to WebSocket server.");
         };
         websocket.onclose = function (evt) {
