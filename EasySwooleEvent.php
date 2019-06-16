@@ -54,9 +54,9 @@ class EasySwooleEvent implements Event
         // 创建一个 Dispatcher 配置
         $conf = new \EasySwoole\Socket\Config();
         // 设置 Dispatcher 为 WebSocket 模式
-        $conf->setType(\EasySwoole\Socket\Config::WEB_SOCKET);
+        $conf->setType($conf::WEB_SOCKET);
         // 设置解析器对象
-        var_dump('aawwwwwaaa', \EasySwoole\Socket\Config::WEB_SOCKET);
+        var_dump('aawwwwwaaa', $conf::WEB_SOCKET);
         $conf->setParser(new WebSocketParser());
         var_dump('aaaaa', $conf->getOnExceptionHandler());
         // 创建 Dispatcher 对象 并注入 config 对象
