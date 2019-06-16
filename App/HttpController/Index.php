@@ -17,9 +17,7 @@ class Index extends Base
 {
     public function index()
     {
-        $content = file_get_contents(__DIR__.'/websocket.html');
-        $this->response()->write($content);
-        $this->response()->end();
+        $this->writeJson(200, '111', 'success');
     }
 
     public function list()
