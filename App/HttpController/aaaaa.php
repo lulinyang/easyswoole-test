@@ -7,7 +7,7 @@ use FastRoute\RouteCollector;
 use EasySwoole\Http\Request;
 use EasySwoole\Http\Response;
 
-class Router extends AbstractRouter
+class aa extends AbstractRouter
 {
     public function initialize(RouteCollector $routeCollector)
     {
