@@ -38,7 +38,6 @@ class Dispatcher
      */
     public function dispatch(\swoole_server $server, string $data, ...$args): void
     {
-        var_dump(['server' => $server, 'data' => $data, '...args' => $args]);
         $clientIp = null;
         $type = $this->config->getType();
         switch ($type) {
