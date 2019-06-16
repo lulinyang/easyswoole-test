@@ -1,5 +1,12 @@
 {
-    
+    "name": "easyswoole/demo",
+    "authors": [
+        {
+            "name": "luinyang",
+            "email": "15655569098@163.com"
+        }
+    ],
+    "description": "test",
     "autoload": {
         "psr-4": {
             "App\\": "App/"
