@@ -39,7 +39,7 @@ class RouteCollector
     {
         $route = $this->currentGroupPrefix.$route;
         $routeDatas = $this->routeParser->parse($route);
-        $this->writeJson(200, ['a' => $route, 'b' => $routeDatas, 'c' => $this->currentGroupPrefix], 'success');
+        var_dump(['a' => $route, 'b' => $routeDatas, 'c' => $this->currentGroupPrefix]);
         foreach ((array) $httpMethod as $method) {
             foreach ($routeDatas as $routeData) {
                 $this->dataGenerator->addRoute($method, $routeData, $handler);
