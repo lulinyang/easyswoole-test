@@ -1,0 +1,20 @@
+[2019-06-16 20:31:04][DEBUG][ERROR] : [Uncaught Swoole\Exception: failed to listen server port[0.0.0.0:9501], Error: Address already in use[98] in /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/ServerManager.php:60
+Stack trace:
+#0 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/ServerManager.php(60): Swoole\Server->__construct('0.0.0.0', 9501, 2, 1)
+#1 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Core.php(117): EasySwoole\EasySwoole\ServerManager->createSwooleServer(9501, 3, '0.0.0.0', Array, 2, 1)
+#2 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(52): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#5 /home/wwwroot/easyswooe/easyswoole(20): EasySwoole\EasySwoole\Comm at file:/home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/ServerManager.php line:60]
+[2019-06-16 20:36:39][DEBUG][WARNING] : [Declaration of App\HttpController\Base::actionNotFound() should be compatible with EasySwoole\Http\AbstractInterface\Controller::actionNotFound(?string $action) at file:/home/wwwroot/easyswooe/App/HttpController/Base.php line:11]
+[2019-06-16 20:57:04][DEBUG][NOTICE] : [Undefined variable: routeCollector at file:/home/wwwroot/easyswooe/App/HttpController/Router.php line:17]
+[2019-06-16 20:57:04][DEBUG][ERROR] : [Call to a member function addRoute() on null at file:/home/wwwroot/easyswooe/vendor/easyswoole/http/src/Dispatcher.php line:74]
+[2019-06-16 21:04:32][DEBUG][ERROR] : [Call to undefined method FastRoute\RouteCollector::writeJson() at file:/home/wwwroot/easyswooe/vendor/easyswoole/http/src/Dispatcher.php line:74]
+[2019-06-16 21:42:01][DEBUG][ERROR] : [Uncaught Swoole\Exception: failed to listen server port[0.0.0.0:9501], Error: Address already in use[98] in /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/ServerManager.php:60
+Stack trace:
+#0 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/ServerManager.php(60): Swoole\Server->__construct('0.0.0.0', 9501, 2, 1)
+#1 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Core.php(117): EasySwoole\EasySwoole\ServerManager->createSwooleServer(9501, 3, '0.0.0.0', Array, 2, 1)
+#2 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(44): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(52): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#5 /home/wwwroot/easyswooe/easyswoole(20): EasySwoole\EasySwoole\Comm at file:/home/wwwroot/easyswooe/vendor/easyswoole/easyswoole/src/ServerManager.php line:60]
