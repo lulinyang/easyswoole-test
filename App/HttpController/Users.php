@@ -10,7 +10,7 @@ use EasySwoole\Utility\Hash;
 use EasySwoole\Component\Pool\Exception\PoolEmpty;
 use EasySwoole\Http\Request;
 
-class UserController extends Base
+class Users extends Base
 {
     public function index()
     {
