@@ -7,6 +7,7 @@ use App\Utility\Pool\MysqlPool;
 use EasySwoole\Http\Message\Status;
 use EasySwoole\Utility\Hash;
 use EasySwoole\Component\Pool\Exception\PoolEmpty;
+use App\Model\ConditionBean;
 
 class Users extends Base
 {
@@ -17,17 +18,23 @@ class Users extends Base
     public function register()
     {
         $params = $this->Request()->getRequestParam();
+        //new 一个条件类,方便传入条件
+        $conditionBean = new ConditionBean();
+        $conditionBean->addWhere('name', $params['name'], '=');
         try {
             $db = MysqlPool::defer();
             $user = new User($db);
-            $arr = [
-                'name' => $params['name'],
-                'password' => Hash::makePasswordHash($params['password']),
-            ];
-
-            $data = $user->insert($arr);
-
-            $this->writeJson(200, $data, 'success');
+            $res = $user->find($conditionBean->toArray([], SplBean::FILTER_NOT_NULL));
+            if ($res) {
+                $this->writeJson(1001, [], '用户名重复');
+            } else {
+                $arr = [
+                    'name' => $params['name'],
+                    'password' => Hash::makePasswordHash($params['password']),
+                ];
+                $data = $user->insert($arr);
+                $this->writeJson(200, $data, 'success');
+            }
         } catch (\Throwable $throwable) {
             $this->writeJson(Status::CODE_BAD_REQUEST, null, $throwable->getMessage());
         } catch (PoolEmpty $poolEmpty) {
