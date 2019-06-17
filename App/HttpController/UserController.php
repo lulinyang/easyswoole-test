@@ -10,7 +10,7 @@ use EasySwoole\Http\Message\Status;
 use EasySwoole\Utility\Hash;
 use EasySwoole\Component\Pool\Exception\PoolEmpty;
 
-class Users extends Base
+class UserController extends Base
 {
     public function index()
     {
@@ -27,7 +27,7 @@ class Users extends Base
             $user = new User($db);
             $res = $user->find($conditionBean->toArray([], SplBean::FILTER_NOT_NULL));
             if ($res) {
-                $this->writeJson(1001, [], '用户名重复');
+                $this->writeJson(1001, false, '用户名重复');
             } else {
                 $arr = [
                     'name' => $params['name'],
