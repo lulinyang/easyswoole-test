@@ -71,3 +71,12 @@ string(23) "shake success at fd :49"
 [2019-06-16 22:46:21 #12261.1]	INFO	Server is shutdown now
 [2019-06-16 22:48:05 #12344.1]	INFO	Server is shutdown now
 [2019-06-16 22:48:29 #12390.1]	INFO	Server is shutdown now
+[2019-06-16 23:15:02 #12493.1]	INFO	Server is shutdown now
+[2019-06-16 23:26:31 #12595.1]	INFO	Server is shutdown now
+[2019-06-17 22:49:26 $13566.0]	INFO	Server is reloading all workers now
+[2019-06-17 22:49:31 *13667.0]	WARNING	http_request_on_body (ERRNO 9010): parse multipart body failed, n=40
+[2019-06-17 23:00:33 $13566.0]	INFO	Server is reloading all workers now
+[2019-06-17 23:00:35 *13668.1]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-17 23:02:59 $13566.0]	INFO	Server is reloading all workers now
+[2019-06-17 23:03:01 *13726.0]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-17 23:05:55 #13565.1]	INFO	Server is shutdown now
