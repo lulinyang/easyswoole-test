@@ -25,7 +25,7 @@ class Users extends Base
                 'password' => Hash::makePasswordHash($params->password),
             ];
 
-            return $user->insert($arr);
+            $data = $user->insert($arr);
 
             $this->writeJson(200, $data, 'success');
         } catch (\Throwable $throwable) {
