@@ -32,6 +32,7 @@ class UserController extends Base
                 $arr = [
                     'name' => $params['name'],
                     'password' => Hash::makePasswordHash($params['password']),
+                    'created_at' => date('Y-m-d H:i:s', time()),
                 ];
                 $data = $user->insert($arr);
                 $this->writeJson(200, $data, 'success');
