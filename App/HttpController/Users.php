@@ -18,8 +18,8 @@ class Users extends Base
 
     public function register()
     {
-        $request = new Request();
-        $params = $request->getRequestParam();
+        // $request = new Request();
+        $params = $this->Request()->getRequestParam();
         $this->writeJson(200, $params, 'success');
         $this->response()->end();
 
