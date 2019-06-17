@@ -3,7 +3,6 @@
 namespace App\HttpController;
 
 use App\Model\User;
-use App\Utility\Pool\MysqlObject;
 use App\Utility\Pool\MysqlPool;
 use EasySwoole\Http\Message\Status;
 use EasySwoole\Utility\Hash;
@@ -19,15 +18,15 @@ class Users extends Base
     {
         $params = $this->Request()->getRequestParam();
         try {
-            $data = MysqlPool::invoke(function (MysqlObject $db) {
-                $user = new User($db);
-                $arr = [
-                    'name' => $params->name,
-                    'password' => Hash::makePasswordHash($params->password),
-                ];
+            $db = MysqlPool::defer();
+            $user = new User($db);
+            $arr = [
+                'name' => $params->name,
+                'password' => Hash::makePasswordHash($params->password),
+            ];
 
-                return $user->insert($arr);
-            });
+            return $user->insert($arr);
+
             $this->writeJson(200, $data, 'success');
         } catch (\Throwable $throwable) {
             $this->writeJson(Status::CODE_BAD_REQUEST, null, $throwable->getMessage());
