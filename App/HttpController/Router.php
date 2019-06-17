@@ -15,6 +15,7 @@ class Router extends AbstractRouter
 
         $routeCollector->addRoute(['GET', 'POST'], '/', '/Index/index');
         $routeCollector->addRoute(['GET', 'POST'], '/list', '/Index/list');
+        $routeCollector->addRoute(['GET', 'POST'], '/api/register', '/Index/add');
         $routeCollector->addRoute(['GET', 'POST'], '/websocket', '/WebSocket/index');
         $routeCollector->addRoute(['GET', 'POST'], '/reply', '/WebSocket/reply');
 
