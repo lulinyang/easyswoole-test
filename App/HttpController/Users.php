@@ -4,10 +4,11 @@ namespace App\HttpController;
 
 use App\Model\User;
 use App\Utility\Pool\MysqlPool;
+use EasySwoole\Spl\SplBean;
+use App\Model\ConditionBean;
 use EasySwoole\Http\Message\Status;
 use EasySwoole\Utility\Hash;
 use EasySwoole\Component\Pool\Exception\PoolEmpty;
-use App\Model\ConditionBean;
 
 class Users extends Base
 {
