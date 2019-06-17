@@ -21,8 +21,8 @@ class Users extends Base
             $db = MysqlPool::defer();
             $user = new User($db);
             $arr = [
-                'name' => $params->name,
-                'password' => Hash::makePasswordHash($params->password),
+                'name' => $params['name'],
+                'password' => Hash::makePasswordHash($params['password']),
             ];
 
             $data = $user->insert($arr);
