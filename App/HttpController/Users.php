@@ -16,9 +16,10 @@ class Users extends Base
     {
     }
 
-    public function register(Request $request)
+    public function register()
     {
-        $params = $request->getRequestParam();
+        // $request = new Request();
+        $params = $this->getRequestParam();
         $this->writeJson(200, $params, 'success');
         $this->response()->end();
 
