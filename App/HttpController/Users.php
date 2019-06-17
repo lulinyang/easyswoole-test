@@ -8,7 +8,6 @@ use App\Utility\Pool\MysqlPool;
 use EasySwoole\Http\Message\Status;
 use EasySwoole\Utility\Hash;
 use EasySwoole\Component\Pool\Exception\PoolEmpty;
-use EasySwoole\Http\Request;
 
 class Users extends Base
 {
@@ -18,19 +17,13 @@ class Users extends Base
 
     public function register()
     {
-        // $request = new Request();
         $params = $this->Request()->getRequestParam();
-        $this->writeJson(200, $params, 'success');
-        $this->response()->end();
-
         try {
             $data = MysqlPool::invoke(function (MysqlObject $db) {
                 $user = new User($db);
-                $password = '123456';
                 $arr = [
-                    'name' => '张三',
-                    'email' => '12228380958@qq.com',
-                    'password' => Hash::makePasswordHash($password),
+                    'name' => $params->name,
+                    'password' => Hash::makePasswordHash($params->password),
                 ];
 
                 return $user->insert($arr);
