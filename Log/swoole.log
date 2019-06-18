@@ -80,3 +80,26 @@ string(23) "shake success at fd :49"
 [2019-06-17 23:02:59 $13566.0]	INFO	Server is reloading all workers now
 [2019-06-17 23:03:01 *13726.0]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
 [2019-06-17 23:05:55 #13565.1]	INFO	Server is shutdown now
+[2019-06-17 23:07:04 #13870.1]	INFO	Server is shutdown now
+[2019-06-17 23:10:22 #13956.1]	INFO	Server is shutdown now
+[2019-06-17 23:11:44 #14014.1]	INFO	Server is shutdown now
+[2019-06-17 23:12:41 #14071.1]	INFO	Server is shutdown now
+[2019-06-17 23:16:19 #14128.1]	INFO	Server is shutdown now
+[2019-06-17 23:16:22 *14139.0]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-17 23:19:13 #14201.1]	INFO	Server is shutdown now
+[2019-06-17 23:19:16 *14221.0]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-17 23:20:18 #14269.1]	INFO	Server is shutdown now
+[2019-06-17 23:20:21 *14280.0]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-17 23:23:21 #14326.1]	INFO	Server is shutdown now
+[2019-06-17 23:23:23 *14337.0]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-17 23:31:37 $14386.0]	INFO	Server is reloading all workers now
+[2019-06-17 23:31:39 *14396.0]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-17 23:32:43 $14386.0]	INFO	Server is reloading all workers now
+[2019-06-17 23:32:45 *14469.0]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-17 23:34:18 $14386.0]	INFO	Server is reloading all workers now
+[2019-06-17 23:34:20 *14523.0]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-17 23:41:37 $14386.0]	INFO	Server is reloading all workers now
+[2019-06-17 23:41:40 *14577.0]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
+[2019-06-17 23:41:40 $14386.0]	WARNING	swManager_kill_timeout_process (ERRNO 9012): [Manager] Worker#1[pid=14578] exit timeout, forced kill
+[2019-06-17 23:56:35 #14385.1]	INFO	Server is shutdown now
+[2019-06-17 23:56:38 *14659.0]	WARNING	swWorker_try_to_exit (ERRNO 9012): worker exit timeout, forced to terminate
