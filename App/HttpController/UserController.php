@@ -57,7 +57,7 @@ class UserController extends Base
         if ($res) {
             $result = Hash::validatePasswordHash($params['password'], $res['password']);
             if (!$result) {
-                $this->writeJson(200, '密码不正确！', 'success');
+                $this->writeJson(200, false, '密码不正确！');
             } else {
                 $this->writeJson(200, $res, 'success');
             }
