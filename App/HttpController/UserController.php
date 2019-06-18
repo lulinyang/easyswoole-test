@@ -75,7 +75,7 @@ class UserController extends Base
             $conditionBean = new ConditionBean();
             $conditionBean->orderBy('name', 'ASC');
 
-            return $user->paginate($conditionBean->toArray([], SplBean::FILTER_NOT_NULL));
+            $data = $user->paginate($conditionBean->toArray([], SplBean::FILTER_NOT_NULL));
 
             $this->writeJson(200, $data, 'success');
         } catch (\Throwable $throwable) {
