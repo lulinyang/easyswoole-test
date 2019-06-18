@@ -22,7 +22,7 @@ class UserController extends Base
         $params = $this->Request()->getRequestParam();
         //new 一个条件类,方便传入条件
         $conditionBean = new ConditionBean();
-        $this->conditionBean->addWhere('name', $params['name'], '=');
+        $conditionBean->addWhere('name', $params['name'], '=');
         try {
             $db = MysqlPool::defer();
             $user = new User($db);
