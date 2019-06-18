@@ -9,8 +9,7 @@ class Base extends Controller
 {
     protected $con;
 
-    // public function __contron
-    protected function initialize()
+    protected function __construct()
     {
         $this->con = new ConditionBean();
     }
