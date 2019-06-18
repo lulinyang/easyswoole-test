@@ -16,11 +16,12 @@ class Router extends AbstractRouter
         $routeCollector->addRoute(['GET', 'POST'], '/', '/Index/index');
         $routeCollector->addRoute(['GET', 'POST'], '/list', '/Index/list');
 
-        //api--------------------------------------------------------------------------------
+        /*-------------------------------------api----------------------------------------*/
         //注册
         $routeCollector->addRoute(['POST'], '/api/register', '/UserController/register');
         $routeCollector->addRoute(['POST'], '/api/login', '/UserController/login');
-        //api------------------------------------------------------------------------------end
+        $routeCollector->addRoute(['POST'], '/api/userList', '/UserController/list');
+        /*--------------------------------------------------------------------------------*/
         //websocket推送消息
         $routeCollector->addRoute(['GET', 'POST'], '/websocket', '/WebSocket/index');
         $routeCollector->addRoute(['GET', 'POST'], '/reply', '/WebSocket/reply');
