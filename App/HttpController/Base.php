@@ -7,14 +7,6 @@ use App\Model\ConditionBean;
 
 class Base extends Controller
 {
-    protected $con;
-
-    public function __construct()
-    {
-        parent::__construct();
-        $this->con = new ConditionBean();
-    }
-
     public function index()
     {
         // $this->actionNotFound('error');
