@@ -62,7 +62,7 @@ class UserController extends Base
                 $this->writeJson(200, $res, 'success');
             }
         } else {
-            $this->writeJson(200, '用户名不存在！', 'success');
+            $this->writeJson(200, false, '用户名不存在！');
         }
     }
 }
