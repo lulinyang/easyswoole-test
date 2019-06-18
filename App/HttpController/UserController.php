@@ -69,14 +69,14 @@ class UserController extends Base
     public function list()
     {
         try {
-            $data = MysqlPool::invoke(function (MysqlObject $db) {
-                $user = new User($db);
-                //new 一个条件类,方便传入条件
-                $conditionBean = new ConditionBean();
-                $conditionBean->orderBy('name', 'ASC');
+            $db = MysqlPool::defer();
+            $user = new User($db);
+            //new 一个条件类,方便传入条件
+            $conditionBean = new ConditionBean();
+            $conditionBean->orderBy('name', 'ASC');
 
-                return $user->paginate($conditionBean->toArray([], SplBean::FILTER_NOT_NULL));
-            });
+            return $user->paginate($conditionBean->toArray([], SplBean::FILTER_NOT_NULL));
+
             $this->writeJson(200, $data, 'success');
         } catch (\Throwable $throwable) {
             $this->writeJson(Status::CODE_BAD_REQUEST, null, $throwable->getMessage());
