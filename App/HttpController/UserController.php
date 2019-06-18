@@ -49,8 +49,19 @@ class UserController extends Base
     public function login()
     {
         $params = $this->Request()->getRequestParam();
-        $hash = Hash::makePasswordHash($params['password']);
-        $res = Hash::validatePasswordHash($params['password'], $hash);
-        $this->writeJson(200, ['param' => $params, 'res' => $res], 'success');
+        $conditionBean = new ConditionBean();
+        $conditionBean->addWhere('name', $params['name'], '=');
+        $res = $user->find($conditionBean->toArray([], SplBean::FILTER_NOT_NULL));
+        if ($res) {
+            $hash = Hash::makePasswordHash($res->password);
+            $res = Hash::validatePasswordHash($params['password'], $hash);
+            if (!$res) {
+                $this->writeJson(500, '密码不正确！', 'success');
+            } else {
+                $this->writeJson(200, $res, 'success');
+            }
+        } else {
+            $this->writeJson(404, '用户名不存在！', 'success');
+        }
     }
 }
