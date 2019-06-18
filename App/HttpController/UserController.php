@@ -72,10 +72,10 @@ class UserController extends Base
             $db = MysqlPool::defer();
             $user = new User($db);
             //new 一个条件类,方便传入条件
-            $conditionBean = new ConditionBean();
-            $conditionBean->addOrderBy('name', 'ASC');
+            // $conditionBean = new ConditionBean();
+            // $conditionBean->addOrderBy('name', 'ASC');
 
-            $data = $user->paginate($conditionBean->toArray([], SplBean::FILTER_NOT_NULL));
+            $data = $user->select();
 
             $this->writeJson(200, $data, 'success');
         } catch (\Throwable $throwable) {

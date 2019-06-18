@@ -30,6 +30,11 @@ class BaseModel extends Model
         return ['total' => $total, 'pageNo' => $page, 'list' => $list];
     }
 
+    public function select($columns = '*')
+    {
+        $this->getDb()->get($this->tableName, $columns);
+    }
+
     public function find($condition = [], $columns = '*')
     {
         if (!empty($condition)) {
