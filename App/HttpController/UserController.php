@@ -51,6 +51,8 @@ class UserController extends Base
         $params = $this->Request()->getRequestParam();
         $conditionBean = new ConditionBean();
         $conditionBean->addWhere('name', $params['name'], '=');
+        $db = MysqlPool::defer();
+        $user = new User($db);
         $res = $user->find($conditionBean->toArray([], SplBean::FILTER_NOT_NULL));
         if ($res) {
             $hash = Hash::makePasswordHash($res->password);
