@@ -32,7 +32,7 @@ class BaseModel extends Model
 
     public function select($columns = '*')
     {
-        $this->getDb()->get($this->tableName, $columns);
+        $this->getDb()->get($this->tableName, null, $columns);
     }
 
     public function find($condition = [], $columns = '*')
