@@ -11,6 +11,7 @@ class Base extends Controller
 
     public function __construct()
     {
+        parent::__construct();
         $this->con = new ConditionBean();
     }
 
