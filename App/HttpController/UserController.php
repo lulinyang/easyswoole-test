@@ -73,7 +73,7 @@ class UserController extends Base
             $user = new User($db);
             //new 一个条件类,方便传入条件
             $conditionBean = new ConditionBean();
-            $conditionBean->orderBy('name', 'ASC');
+            $conditionBean->addOrderBy('name', 'ASC');
 
             $data = $user->paginate($conditionBean->toArray([], SplBean::FILTER_NOT_NULL));
 
