@@ -16,6 +16,7 @@ class UserController extends Base
     {
     }
 
+    //注册
     public function register()
     {
         $params = $this->Request()->getRequestParam();
@@ -42,5 +43,14 @@ class UserController extends Base
         } catch (PoolEmpty $poolEmpty) {
             $this->writeJson(Status::CODE_BAD_REQUEST, null, '没有链接可用');
         }
+    }
+
+    //登录
+    public function login()
+    {
+        $params = $this->Request()->getRequestParam();
+        $hash = Hash::makePasswordHash($params['password']);
+        $res = Hash::validatePasswordHash($params['password'], $hash);
+        $this->writeJson(200, ['param' => $params, 'res' => $res], 'success');
     }
 }

@@ -12,10 +12,16 @@ class Router extends AbstractRouter
     public function initialize(RouteCollector $routeCollector)
     {
         $this->setGlobalMode(true);
-
+        //测试
         $routeCollector->addRoute(['GET', 'POST'], '/', '/Index/index');
         $routeCollector->addRoute(['GET', 'POST'], '/list', '/Index/list');
-        $routeCollector->addRoute(['GET', 'POST'], '/api/register', '/UserController/register');
+
+        //api--------------------------------------------------------------------------------
+        //注册
+        $routeCollector->addRoute(['POST'], '/api/register', '/UserController/register');
+        $routeCollector->addRoute(['POST'], '/api/login', '/UserController/login');
+        //api------------------------------------------------------------------------------end
+        //websocket推送消息
         $routeCollector->addRoute(['GET', 'POST'], '/websocket', '/WebSocket/index');
         $routeCollector->addRoute(['GET', 'POST'], '/reply', '/WebSocket/reply');
 
