@@ -56,9 +56,9 @@ class UserController extends Base
         $res = $user->find($conditionBean->toArray([], SplBean::FILTER_NOT_NULL));
         if ($res) {
             // $hash = Hash::makePasswordHash();
-            $result = Hash::validatePasswordHash($params['password'], $res->password);
+            $result = Hash::validatePasswordHash($params['password'], $res['password']);
             if (!$result) {
-                $this->writeJson(200, ['res' => $res, 'result' => $result, 'pwd' => $res->password], 'success');
+                $this->writeJson(200, ['res' => $res, 'result' => $result, 'pwd' => $res['password']], 'success');
             // $this->writeJson(200, '密码不正确！', 'success');
             } else {
                 $this->writeJson(200, $res, 'success');
