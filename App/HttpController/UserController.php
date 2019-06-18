@@ -21,8 +21,8 @@ class UserController extends Base
     {
         $params = $this->Request()->getRequestParam();
         //new 一个条件类,方便传入条件
-        $conditionBean = new ConditionBean();
-        $conditionBean->addWhere('name', $params['name'], '=');
+        // $conditionBean = new ConditionBean();
+        $this->con->addWhere('name', $params['name'], '=');
         try {
             $db = MysqlPool::defer();
             $user = new User($db);
@@ -58,12 +58,12 @@ class UserController extends Base
             $hash = Hash::makePasswordHash($res->password);
             $res = Hash::validatePasswordHash($params['password'], $hash);
             if (!$res) {
-                $this->writeJson(500, '密码不正确！', 'success');
+                $this->writeJson(200, '密码不正确！', 'success');
             } else {
                 $this->writeJson(200, $res, 'success');
             }
         } else {
-            $this->writeJson(404, '用户名不存在！', 'success');
+            $this->writeJson(200, '用户名不存在！', 'success');
         }
     }
 }
