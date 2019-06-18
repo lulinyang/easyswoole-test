@@ -49,8 +49,8 @@ class UserController extends Base
     public function login()
     {
         $params = $this->Request()->getRequestParam();
-        $conditionBean = new ConditionBean();
-        $conditionBean->addWhere('name', $params['name'], '=');
+        // $conditionBean = new ConditionBean();
+        $this->con->addWhere('name', $params['name'], '=');
         $db = MysqlPool::defer();
         $user = new User($db);
         $res = $user->find($conditionBean->toArray([], SplBean::FILTER_NOT_NULL));
