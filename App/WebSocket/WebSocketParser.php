@@ -54,15 +54,15 @@ class WebSocketParser implements ParserInterface
 
         // 设置被调用的方法
         $caller->setAction($data['action'] ?? 'index');
-        var_dump($data);
+        var_dump($data['content']);
         // 检查是否存在args
         if (isset($data['content']) && is_array($data['content'])) {
             $args = $data['content'];
         }
 
-        // if (isset($data['content'])) {
-        //     $args = $data['content'];
-        // }
+        if (isset($data['content'])) {
+            $args = $data['content'];
+        }
 
         // 设置被调用的Args
         $caller->setArgs($args ?? []);
