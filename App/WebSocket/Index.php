@@ -64,7 +64,7 @@ class Index extends Controller
         /** @var \swoole_websocket_server $server */
         $server = ServerManager::getInstance()->getSwooleServer();
         $start = 0;
-        $params = $this->caller()->getArgs()
+        $params = json_encode($this->caller()->getArgs());
         // 此处直接遍历所有FD进行消息投递
         // 生产环境请自行使用Redis记录当前在线的WebSocket客户端FD
         while (true) {
