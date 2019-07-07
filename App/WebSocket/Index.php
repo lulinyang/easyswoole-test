@@ -16,8 +16,9 @@ class Index extends Controller
     public function hello()
     {
         // $request = $this->request();
-        $params = json_encode($this->caller()->getArgs());
-        $this->response()->setMessage($params);
+        $params = $this->caller()->getArgs();
+        var_dump($params);
+        $this->response()->setMessage('aaa');
     }
 
     public function who()
