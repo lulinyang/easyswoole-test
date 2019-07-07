@@ -54,7 +54,6 @@ class WebSocketParser implements ParserInterface
 
         // 设置被调用的方法
         $caller->setAction($data['action'] ?? 'index');
-        var_dump($data['content']);
         // 检查是否存在args
         if (isset($data['content']) && is_array($data['content'])) {
             $args = $data['content'];
@@ -84,6 +83,6 @@ class WebSocketParser implements ParserInterface
          * 这里返回响应给客户端的信息
          * 这里应当只做统一的encode操作 具体的状态等应当由 Controller处理
          */
-        return $response->getMessage();
+        // return $response->getMessage();
     }
 }
