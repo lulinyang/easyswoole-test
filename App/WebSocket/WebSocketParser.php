@@ -56,6 +56,7 @@ class WebSocketParser implements ParserInterface
         // 检查是否存在args
         if (isset($data['content']) && is_array($data['content'])) {
             $args = $data['content'];
+            var_dump($args);
         }
 
         // 设置被调用的Args
