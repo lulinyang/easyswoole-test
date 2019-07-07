@@ -61,7 +61,7 @@ class WebSocketParser implements ParserInterface
         }
 
         if (isset($data['content'])) {
-            $args = $data['content'];
+            $args = [$data['content']];
         }
 
         // 设置被调用的Args
