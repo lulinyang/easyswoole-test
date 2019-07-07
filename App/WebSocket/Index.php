@@ -17,7 +17,7 @@ class Index extends Controller
     {
         // $request = $this->request();
         // $data = $request->getRequestParam('content');
-        $this->response()->setMessage();
+        $this->response()->setMessage('aaa');
     }
 
     public function who()
