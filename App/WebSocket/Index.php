@@ -82,7 +82,7 @@ class Index extends Controller
                 /* 判断此fd 是否是一个有效的 websocket 连接 */
                 if ($info && $info['websocket_status'] == WEBSOCKET_STATUS_FRAME) {
                     // $server->push(json_encode($params));
-                    $this->response()->setMessage($params);
+                    $this->response()->setMessage(json_encode($params));
                 }
             }
         }
