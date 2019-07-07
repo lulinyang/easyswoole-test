@@ -84,6 +84,7 @@ class WebSocketEvent
          * 判断此fd 是否是一个有效的 websocket 连接
          * 参见 https://wiki.swoole.com/wiki/page/490.html
          */
+        var_dump($info);
         if ($info && $info['websocket_status'] === WEBSOCKET_STATUS_FRAME) {
             /*
              * 判断连接是否是 server 主动关闭
