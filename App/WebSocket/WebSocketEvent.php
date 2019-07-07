@@ -35,7 +35,7 @@ class WebSocketEvent
         /* 此处是  RFC规范中的WebSocket握手验证过程 必须执行 否则无法正确握手 */
         if ($this->secWebsocketAccept($request, $response)) {
             $response->end();
-            var_dump($request);
+            // var_dump($request);
 
             return true;
         }
