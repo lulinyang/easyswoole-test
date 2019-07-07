@@ -15,9 +15,9 @@ class Index extends Controller
 {
     public function hello()
     {
-        $request = $this->request();
-        $data = $request->getRequestParam('content');
-        $this->response()->setMessage(json_encode($data));
+        // $request = $this->request();
+        // $data = $request->getRequestParam('content');
+        $this->response()->setMessage();
     }
 
     public function who()
@@ -66,7 +66,6 @@ class Index extends Controller
         /** @var \swoole_websocket_server $server */
         $server = ServerManager::getInstance()->getSwooleServer();
         $start = 0;
-        $params = json_encode($this->caller()->getArgs());
         // 此处直接遍历所有FD进行消息投递
         // 生产环境请自行使用Redis记录当前在线的WebSocket客户端FD
         while (true) {
@@ -79,7 +78,7 @@ class Index extends Controller
                 $info = $server->getClientInfo($fd);
                 /* 判断此fd 是否是一个有效的 websocket 连接 */
                 if ($info && $info['websocket_status'] == WEBSOCKET_STATUS_FRAME) {
-                    $server->push($fd, 'http broadcast fd '.$fd.' at '.date('H:i:s').$params);
+                    $server->push($fd, 'http broadcast fd '.$fd.' at '.date('H:i:s'));
                 }
             }
         }
